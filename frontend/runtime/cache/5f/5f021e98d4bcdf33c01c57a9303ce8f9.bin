@@ -1,0 +1,1261 @@
+a:2:{i:0;a:9:{s:12:"cacheVersion";i:1;s:9:"cacheData";N;s:7:"content";s:77161:"<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>BaoHiem.vn - Hệ thống bảo hiểm trực tuyến</title>
+    <![CDATA[YII-DYNAMIC-0]]>
+<link href="/theme/css/animate.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap&quot; rel=&quot;stylesheet" rel="stylesheet">
+<link href="/theme/libs/Font-Awesome-v5.9.0-Pro/css/all.min.css" rel="stylesheet">
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+<link href="/theme/css/style.css" rel="stylesheet"></head>
+<body>
+
+    <nav id="menu" class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/site/index"><img src="/theme/images/logo-v2.png"></a>
+    <a class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </a>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    SẢN PHẨM
+
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <a class="dropdown-item" href="/products/list-products?code=VienPhi">Bảo Hiểm Viện Phí</a>
+                                                    <a class="dropdown-item" href="/products/list-products?code=TaiNan">Bảo Hiểm Tai Nạn</a>
+                                                    <a class="dropdown-item" href="/products/list-products?code=bao-hiem-nhan-tho">Bảo Hiểm Nhân Thọ</a>
+                                                    <a class="dropdown-item" href="/products/list-products?code=bao-hiem-xe">Bảo Hiểm Xe</a>
+                                        </div>
+
+            </li>
+            <li class="nav-item">
+                <a class="nav-link  " href="#">HỢP ĐỒNG</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link  " href="#">BỒI THƯỜNG</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="/site/about-us">VỀ CHÚNG TÔI</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link  " href="/articles/list-articles">GÓC CHUYÊN GIA</a>
+            </li>
+        </ul>
+        <div class="form-inline my-2 my-lg-0">
+            <div class="phone_header">
+                <a href="tel:18001091">
+                    <img class="ispc" src="/theme/images/icon-cell-phone.jpg">
+                    <img class="ismb" src="/theme/images/icon-cell-phone-mb.jpg">
+                    <span>18001091</span>
+                </a>
+            </div>
+            <div class="login_header">
+                <a href="tel:18001091">
+                    <img src="/theme/images/icon-user.jpg">
+                    <span>Đăng nhập</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+    <!-- end header -->
+    
+<!-- nav menu   -->
+<div class="banner_main">
+    <div class="slider_banner owl-carousel owl-theme">
+                    <div class="item">
+                <div class="banner">
+                    <a href="/articles?slug=lut-cham-noc-nha">
+                        <img class="ispc" src="/theme/images/slide-banner.jpg" alt="">
+                        <img class="ismb" src="/theme/images/banner-mb.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+            </div>
+</div>
+<!-- end header -->
+
+<div id="wrapper">
+    <!-- main-content -->
+    <div id="main-content" class="check">
+        <div class="select-service">
+            <div class="container">
+                <div class="row">
+                                                <div class="col-4 col-lg-2 col-sm-4">
+                                <div class="info-services">
+                                    <a href="#">
+                                                                                    <img src="https://via.placeholder.com/200x200" alt="avatar">
+                                                                            </a>
+                                    <a href="/products/list-products?code=VienPhi" class="name">Bảo Hiểm Viện Phí</a>
+                                </div>
+                            </div>
+                                                    <div class="col-4 col-lg-2 col-sm-4">
+                                <div class="info-services">
+                                    <a href="#">
+                                                                                    <img src="https://via.placeholder.com/200x200" alt="avatar">
+                                                                            </a>
+                                    <a href="/products/list-products?code=TaiNan" class="name">Bảo Hiểm Tai Nạn</a>
+                                </div>
+                            </div>
+                                                    <div class="col-4 col-lg-2 col-sm-4">
+                                <div class="info-services">
+                                    <a href="#">
+                                                                                    <img src="/assets/746faf10/cat-inssurrances/icon-static.png ">
+                                                                            </a>
+                                    <a href="/products/list-products?code=bao-hiem-nhan-tho" class="name">Bảo Hiểm Nhân Thọ</a>
+                                </div>
+                            </div>
+                                                    <div class="col-4 col-lg-2 col-sm-4">
+                                <div class="info-services">
+                                    <a href="#">
+                                                                                    <img src="/assets/746faf10/cat-inssurrances/img-avatar-1.png ">
+                                                                            </a>
+                                    <a href="/products/list-products?code=bao-hiem-xe" class="name">Bảo Hiểm Xe</a>
+                                </div>
+                            </div>
+                                        </div>
+            </div>
+        </div>
+
+        <!-- select-services-now -->
+        <div class="select-services-now">
+            <div class="container">
+                <h4 class="title text-center">
+                    Các lựa chọn hàng đầu ngày hôm nay
+                </h4>
+                <p class="subtitle text-center">Nhân ngay những ưu đãi từ VinaHome</p>
+                <img src="/theme/images/lua-chon-hang-dau/hr-dich-vu-trai-nghiem.png" class="text-center hr" alt="">
+                <br>
+            </div>
+            <div class="slide-select-services-now owl-carousel owl-theme">
+                                        <div class="card-services item">
+                            <div class="top-card-service">
+                                <div class="left-top-card-service">
+                                    <h3>Sản Phầm 19092</h3>
+                                </div>
+                                <div class="right-top-card-service">
+                                                                            <img src="/theme/images/goi-co-ban-v1.png">
+                                    
+                                </div>
+                            </div>
+                            <div class="middle-card-service text-center">
+                                                                    <img src="/assets/746faf10/products/img-avatar-2.jpg ">
+                                                                <p class="desc">.</p>
+                                <hr>
+                                <p class="price">Số tiền bảo biểm<br> <strong> 40,000 đ/Người/Năm</strong>
+                                </p>
+                                <a href="/products/view?slug=san-pham-19092" class="btn-common">MUA NGAY <img src="/theme/images/icon-right.png" alt=""></a>
+                                <br>
+                                <p class="note"> Phí thường niên 1,000 đồng/ngày (1,000 đồng/năm)</p>
+                            </div>
+                        </div>
+                                            <div class="card-services item">
+                            <div class="top-card-service">
+                                <div class="left-top-card-service">
+                                    <h3>Sản Phầm 1909</h3>
+                                </div>
+                                <div class="right-top-card-service">
+                                                                            <img src="/theme/images/goi-tieu-chuan-v1.png">
+                                    
+                                </div>
+                            </div>
+                            <div class="middle-card-service text-center">
+                                                                    <img src="/assets/746faf10/products/img-avatar-1.png ">
+                                                                <p class="desc">.</p>
+                                <hr>
+                                <p class="price">Số tiền bảo biểm<br> <strong> 100,000 đ/Người/Năm</strong>
+                                </p>
+                                <a href="/products/view?slug=san-pham-1909" class="btn-common">MUA NGAY <img src="/theme/images/icon-right.png" alt=""></a>
+                                <br>
+                                <p class="note"> Phí thường niên 3,000 đồng/ngày (1,000 đồng/năm)</p>
+                            </div>
+                        </div>
+                                            <div class="card-services item">
+                            <div class="top-card-service">
+                                <div class="left-top-card-service">
+                                    <h3>Sản Phẩm Test2</h3>
+                                </div>
+                                <div class="right-top-card-service">
+                                                                            <img src="/theme/images/goi-co-ban-v1.png">
+                                    
+                                </div>
+                            </div>
+                            <div class="middle-card-service text-center">
+                                                                    <img src="/assets/746faf10/products/icon-static.png ">
+                                                                <p class="desc">.</p>
+                                <hr>
+                                <p class="price">Số tiền bảo biểm<br> <strong> 100,000 đ/Người/Năm</strong>
+                                </p>
+                                <a href="/products/view?slug=san-pham-test2" class="btn-common">MUA NGAY <img src="/theme/images/icon-right.png" alt=""></a>
+                                <br>
+                                <p class="note"> Phí thường niên  đồng/ngày ( đồng/năm)</p>
+                            </div>
+                        </div>
+                                            <div class="card-services item">
+                            <div class="top-card-service">
+                                <div class="left-top-card-service">
+                                    <h3>Sản Phẩm Test</h3>
+                                </div>
+                                <div class="right-top-card-service">
+                                                                            <img src="/theme/images/goi-co-ban-v1.png">
+                                    
+                                </div>
+                            </div>
+                            <div class="middle-card-service text-center">
+                                                                    <img src="/assets/746faf10/products/icon-money.png ">
+                                                                <p class="desc">.</p>
+                                <hr>
+                                <p class="price">Số tiền bảo biểm<br> <strong> 100,000 đ/Người/Năm</strong>
+                                </p>
+                                <a href="/products/view?slug=san-pham-test" class="btn-common">MUA NGAY <img src="/theme/images/icon-right.png" alt=""></a>
+                                <br>
+                                <p class="note"> Phí thường niên  đồng/ngày ( đồng/năm)</p>
+                            </div>
+                        </div>
+                                            <div class="card-services item">
+                            <div class="top-card-service">
+                                <div class="left-top-card-service">
+                                    <h3>Sản Phẩm Nào đấy</h3>
+                                </div>
+                                <div class="right-top-card-service">
+                                                                            <img src="/theme/images/goi-co-ban-v1.png">
+                                    
+                                </div>
+                            </div>
+                            <div class="middle-card-service text-center">
+                                                                    <img src="/assets/746faf10/products/header-icon-user.png ">
+                                                                <p class="desc">.</p>
+                                <hr>
+                                <p class="price">Số tiền bảo biểm<br> <strong> 100,000 đ/Người/Năm</strong>
+                                </p>
+                                <a href="/products/view?slug=san-pham-nao-day" class="btn-common">MUA NGAY <img src="/theme/images/icon-right.png" alt=""></a>
+                                <br>
+                                <p class="note"> Phí thường niên  đồng/ngày ( đồng/năm)</p>
+                            </div>
+                        </div>
+                                            <div class="card-services item">
+                            <div class="top-card-service">
+                                <div class="left-top-card-service">
+                                    <h3>Sản Phẩm Khuyên Cáo</h3>
+                                </div>
+                                <div class="right-top-card-service">
+                                                                            <img src="/theme/images/goi-co-ban-v1.png">
+                                    
+                                </div>
+                            </div>
+                            <div class="middle-card-service text-center">
+                                                                    <img src="/assets/746faf10/products/5-diem-an-tuong-vuot-troi-cua-xe-cao-cap-vinfast-lux.jpg ">
+                                                                <p class="desc">.</p>
+                                <hr>
+                                <p class="price">Số tiền bảo biểm<br> <strong> 100,000 đ/Người/Năm</strong>
+                                </p>
+                                <a href="/products/view?slug=san-pham-khuyen-cao" class="btn-common">MUA NGAY <img src="/theme/images/icon-right.png" alt=""></a>
+                                <br>
+                                <p class="note"> Phí thường niên  đồng/ngày ( đồng/năm)</p>
+                            </div>
+                        </div>
+                                            <div class="card-services item">
+                            <div class="top-card-service">
+                                <div class="left-top-card-service">
+                                    <h3>ádasdasd</h3>
+                                </div>
+                                <div class="right-top-card-service">
+                                                                            <img src="/theme/images/goi-co-ban-v1.png">
+                                    
+                                </div>
+                            </div>
+                            <div class="middle-card-service text-center">
+                                                                    <img src="/assets/746faf10/products/70903090_1378596888965511_6837197939316621312_o.jpg ">
+                                                                <p class="desc">.</p>
+                                <hr>
+                                <p class="price">Số tiền bảo biểm<br> <strong> 100,000 đ/Người/Năm</strong>
+                                </p>
+                                <a href="/products/view?slug=adasdasd" class="btn-common">MUA NGAY <img src="/theme/images/icon-right.png" alt=""></a>
+                                <br>
+                                <p class="note"> Phí thường niên  đồng/ngày ( đồng/năm)</p>
+                            </div>
+                        </div>
+                                            <div class="card-services item">
+                            <div class="top-card-service">
+                                <div class="left-top-card-service">
+                                    <h3>Bảo Hiểm Số 123</h3>
+                                </div>
+                                <div class="right-top-card-service">
+                                                                            <img src="/theme/images/goi-co-ban-v1.png">
+                                    
+                                </div>
+                            </div>
+                            <div class="middle-card-service text-center">
+                                                                    <img src="https://via.placeholder.com/200x200" alt="avatar">
+                                                                <p class="desc">.</p>
+                                <hr>
+                                <p class="price">Số tiền bảo biểm<br> <strong> 1,000,000 đ/Người/Năm</strong>
+                                </p>
+                                <a href="/products/view?slug=bao-hiem-so-123" class="btn-common">MUA NGAY <img src="/theme/images/icon-right.png" alt=""></a>
+                                <br>
+                                <p class="note"> Phí thường niên  đồng/ngày ( đồng/năm)</p>
+                            </div>
+                        </div>
+                                            <div class="card-services item">
+                            <div class="top-card-service">
+                                <div class="left-top-card-service">
+                                    <h3>Bảo Hiểm Số 12</h3>
+                                </div>
+                                <div class="right-top-card-service">
+                                                                            <img src="/theme/images/goi-co-ban-v1.png">
+                                    
+                                </div>
+                            </div>
+                            <div class="middle-card-service text-center">
+                                                                    <img src="/assets/746faf10/products/5-diem-an-tuong-vuot-troi-cua-xe-cao-cap-vinfast-lux.jpg ">
+                                                                <p class="desc">.</p>
+                                <hr>
+                                <p class="price">Số tiền bảo biểm<br> <strong> 100,000 đ/Người/Năm</strong>
+                                </p>
+                                <a href="/products/view?slug=bao-hiem-so-12" class="btn-common">MUA NGAY <img src="/theme/images/icon-right.png" alt=""></a>
+                                <br>
+                                <p class="note"> Phí thường niên  đồng/ngày ( đồng/năm)</p>
+                            </div>
+                        </div>
+                                            <div class="card-services item">
+                            <div class="top-card-service">
+                                <div class="left-top-card-service">
+                                    <h3>Bảo Hiểm Số 1</h3>
+                                </div>
+                                <div class="right-top-card-service">
+                                                                            <img src="/theme/images/goi-co-ban-v1.png">
+                                    
+                                </div>
+                            </div>
+                            <div class="middle-card-service text-center">
+                                                                    <img src="https://via.placeholder.com/200x200" alt="avatar">
+                                                                <p class="desc">.</p>
+                                <hr>
+                                <p class="price">Số tiền bảo biểm<br> <strong> 100,000 đ/Người/Năm</strong>
+                                </p>
+                                <a href="/products/view?slug=bao-hiem-so-1" class="btn-common">MUA NGAY <img src="/theme/images/icon-right.png" alt=""></a>
+                                <br>
+                                <p class="note"> Phí thường niên  đồng/ngày ( đồng/năm)</p>
+                            </div>
+                        </div>
+                                </div>
+        </div>
+        <!-- select-services-now -->
+
+        <!-- review vinahome -->
+        <div class="review-vinahome">
+            <div class="container">
+                <div class="row wrap-vinahome">
+                    <div class="col-md-12 col-lg-7">
+                        <div class="vinahome">
+                            <div class="icon-home1"></div>
+                            <div class="icon-home2"></div>
+                            <div class="icon-home3"></div>
+                            <div class="icon-home4"></div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-12  col-lg-5 iright">
+                        <div class="content-right">
+                            <p class="desc">VinaHome - Là sản phẩm bảo hiểm hỗ trợ viện phí đầu tiên
+                                khách
+                                hàng có thể tham gia ngay trên di động được thiết kế dành riêng cho khách hàng và
+                                trải
+                                nghiệm thanh toán số trong kỷ nguyên 4.0</p>
+                            <div class="chat">
+                                <div class="chatleft">
+                                    Chat trực tiếp với chuyên viên của VinaHome
+                                    <img src="/theme/images/icon-chat-left.png">
+                                </div>
+                                <div class="chatright">
+                                    Tìm hiểu về những quyền lợi và chi phí của các gói bảo hiểm của chúng tôi
+                                    <img src="/theme/images/icon-chat-right.png">
+                                </div>
+                                <div class="chatleft">
+                                    Trừ phí bảo hiểm trực tiếp qua TKC di động, thẻ cào hoặc app VNPT PAY
+                                    <img src="/theme/images/icon-chat-left.png">
+                                </div>
+                                <div class="chatright">
+                                    Hợp đồng bảo hiểm điện tử được tạo
+                                    bằng SĐT của bạn & chữ kí số
+                                    <img src="/theme/images/icon-chat-right.png">
+                                </div>
+                                <div style="clear: both"></div>
+                            </div>
+                            <p class="buttonthsp">
+                                <a href="#" class="btn-common">CHAT TÌM HIỂU SẢN PHẨM <img
+                                            src="/theme/images/icon-right.png" alt=""></a>
+                            </p>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- review vinahome -->
+
+        <!-- insuarance-mobile -->
+        <div class="insuarance-mobile">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-5 info-insuarance-mobile">
+                        <h4>Gói bảo hiểm trên nền tảng số dành cho di động</h4>
+                        <p>
+                            Bảo hiểm Vinahome là kết quả hợp tác chiến lược giữa nhà mạng Vinaphone với các đối tác
+                            bảo
+                            hiểm nhằm phát triển giải pháp bảo hiểm đột phá và sáng tạo trên nền tảng di dộng và
+                            internet, thiết kế dành cho thuê bao Vinaphone
+                        </p>
+                        <p>
+                            Giờ đây mọi thuê bao di động đều được tham gia các gói bảo hiểm dành cho bạn và gia đình
+                            thật đơn giản.
+                        </p>
+                        <p class="buttonthsp">
+                            <a href="" class="btn-common">
+                                TÌM HIỂU VỀ SẢN PHẨM NGAY
+                                <img src="/theme/images/icon-right.png" alt="">
+                            </a>
+                        </p>
+                    </div>
+                    <div class="col-12 col-lg-7 iright">
+                        <img src="/theme/images/baohiemso-right.png">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- insuarance-mobile -->
+
+        <!-- services -->
+        <div class="services">
+            <div class="container">
+                <div class="wrap-title">
+                    <h4 class="title text-center">
+                        Dịch vụ và trải nghiệm khách hàng
+                    </h4>
+                    <img src="/theme/images/lua-chon-hang-dau/hr-dich-vu-trai-nghiem.png" class="text-center hr" alt="">
+                </div>
+                <div class="row list-services">
+
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="main-choise-services bk1">
+                            <img src="/theme/images/icon-giai-quyet-quyen-loi-bao-hiem.png" alt="">
+                            <div class="link-service">
+                                <a href="">Giải quyết quyền<br> lợi bảo hiểm</a>
+                                <p class="desc">Quy trình Giải quyết quyền lợi trong 15 phút để phục vụ Quý
+                                    khách.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="main-choise-services bk2">
+                            <img src="/theme/images/icon-gia-tri-goi-bao-hiem.png" alt="">
+                            <div class="link-service">
+                                <a href="">Giá trị gói bảo hiểm</a>
+                                <p class="desc">Để thay đổi điều kiện hợp đồng trong hợp đồng bảo hiểm, Quý
+                                    khách
+                                    vui lòng thực hiện theo đường dẫn.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="main-choise-services bk3">
+                            <img src="/theme/images/icon-dong-phi-bao-hiem.png" alt="">
+                            <div class="link-service">
+                                <a href="">Đóng phí bảo hiểm</a>
+                                <p class="desc">Quý khách có thể lựa chọn một trong những hình thức thanh toán
+                                    phí
+                                    bảo hiểm phù hợp theo hướng dẫn</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="main-choise-services bk4">
+                            <img src="/theme/images/icon-so-sanh-cac-goi-bao-hiem.png" alt="">
+                            <div class="link-service">
+                                <a href="">So sánh các gói bảo hiểm</a>
+                                <p class="desc">Quý khách vui lòng thực hiện theo hướng dẫn.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="list_customers">
+                <div class="container">
+                    <div class="slider_customers owl-carousel owl-theme">
+                        <div class="item">
+                            <p class="name"> Ngọc Anh</p>
+                            <p class="job">35 tuổi - Chuyên viên Marketing</p>
+                            <p class="start">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </p>
+                            <p class="desc">“Chúng tôi thấy được tiềm năng to lớn trong việc mang đến những sản
+                                phẩm
+                                bảo hiểm và tài chính mới cho thị trường Việt Nam trên nền tảng thương mại điện
+                                tử.
+                                Giúp khách hàng dễ dàng tìm được những sản phẩm phù hợp với nhu cầu của mình
+                                chính
+                                là sứ mệnh to lớn của mBacsi.”</p>
+                        </div>
+                        <div class="item">
+                            <p class="name"> Trần Việt</p>
+                            <p class="job">27 tuổi - chuyên viên thiết kế đồ hoạ</p>
+                            <p class="start">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </p>
+                            <p class="desc">“Chúng tôi thấy được tiềm năng to lớn trong việc mang đến những sản
+                                phẩm bảo hiểm và tài chính mới cho thị trường Việt Nam trên nền tảng thương mại
+                                điện tử.”</p>
+                        </div>
+                        <div class="item">
+                            <p class="name"> Ngọc Anh</p>
+                            <p class="job">35 tuổi - Chuyên viên Marketing</p>
+                            <p class="start">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </p>
+                            <p class="desc">“Chúng tôi thấy được tiềm năng to lớn trong việc mang đến những sản
+                                phẩm
+                                bảo hiểm và tài chính mới cho thị trường Việt Nam trên nền tảng thương mại điện
+                                tử.
+                                Giúp khách hàng dễ dàng tìm được những sản phẩm phù hợp với nhu cầu của mình
+                                chính
+                                là sứ mệnh to lớn của mBacsi.”</p>
+                        </div>
+                        <div class="item">
+                            <p class="name"> Ngọc Anh</p>
+                            <p class="job">35 tuổi - Chuyên viên Marketing</p>
+                            <p class="start">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </p>
+                            <p class="desc">“Chúng tôi thấy được tiềm năng to lớn trong việc mang đến những sản
+                                phẩm
+                                bảo hiểm và tài chính mới cho thị trường Việt Nam trên nền tảng thương mại điện
+                                tử.
+                                Giúp khách hàng dễ dàng tìm được những sản phẩm phù hợp với nhu cầu của mình
+                                chính
+                                là sứ mệnh to lớn của mBacsi.”</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end services -->
+
+        <div class="container">
+            <hr>
+        </div>
+
+        <!-- slider news -->
+        <div class="slider_news">
+            <div class="container sale-title">
+                <div class="row">
+                    <ul style="margin: 0;padding-left: 15px;">
+                        <li>
+                            <h3>Góc chuyên gia</h3>
+                        </li>
+                        <li><img class="gach" src="/theme/images/gach.jpg"></li>
+                        <li>
+                            <div class="brum">
+                                <ul>
+                                    <li><img src="/theme/images/icon-tin-tuc.png" alt=""><a href="#">Câu chuyện</a>
+                                    </li>
+                                    <li><img src="/theme/images/icon-uu-dai-khuyen-mai.png" alt=""><a href="#">Ưu đãi -
+                                            Khuyến mại</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="wrap-slide">
+                <div class="slider_p row  owl-carousel owl-theme">
+                                                <div class="item">
+                                <div class="img">
+                                    <a class="img_zom">
+                                                                                        <img src="https://via.placeholder.com/300x200" id="avatarPro"  class="avatar  img-thumbnail" alt="avatar">
+                                                                                </a>
+                                </div>
+                                <div class="content">
+                                    <a href="/articles/view?slug=fox-sports-viet-nam-thi-dau-on-dinh-hon-thai-lan">
+                                        <h3>Fox Sports: 'Việt Nam thi đấu ổn định hơn Thái Lan'</h3>
+                                    </a>
+                                    <a href="/articles/view?slug=fox-sports-viet-nam-thi-dau-on-dinh-hon-thai-lan" class="more">Xem chi tiết</a>
+                                </div>
+                            </div>
+                                                    <div class="item">
+                                <div class="img">
+                                    <a class="img_zom">
+                                                                                        <img src="https://via.placeholder.com/300x200" id="avatarPro"  class="avatar  img-thumbnail" alt="avatar">
+                                                                                </a>
+                                </div>
+                                <div class="content">
+                                    <a href="/articles/view?slug=lut-cham-noc-nha">
+                                        <h3>Lụt chạm nóc nhà</h3>
+                                    </a>
+                                    <a href="/articles/view?slug=lut-cham-noc-nha" class="more">Xem chi tiết</a>
+                                </div>
+                            </div>
+                                                    <div class="item">
+                                <div class="img">
+                                    <a class="img_zom">
+                                                                                        <img src="https://via.placeholder.com/300x200" id="avatarPro"  class="avatar  img-thumbnail" alt="avatar">
+                                                                                </a>
+                                </div>
+                                <div class="content">
+                                    <a href="/articles/view?slug=anh-tieu-de-bai-viet">
+                                        <h3>Ảnh tiêu đề bài viết</h3>
+                                    </a>
+                                    <a href="/articles/view?slug=anh-tieu-de-bai-viet" class="more">Xem chi tiết</a>
+                                </div>
+                            </div>
+                                                    <div class="item">
+                                <div class="img">
+                                    <a class="img_zom">
+                                                                                        <img src="https://via.placeholder.com/300x200" id="avatarPro"  class="avatar  img-thumbnail" alt="avatar">
+                                                                                </a>
+                                </div>
+                                <div class="content">
+                                    <a href="/articles/view?slug=ban-khoan-thoi-diem-trinh-du-an-san-bay-long-thanh">
+                                        <h3>Băn khoăn thời điểm trình dự án sân bay Long Thành</h3>
+                                    </a>
+                                    <a href="/articles/view?slug=ban-khoan-thoi-diem-trinh-du-an-san-bay-long-thanh" class="more">Xem chi tiết</a>
+                                </div>
+                            </div>
+                                                    <div class="item">
+                                <div class="img">
+                                    <a class="img_zom">
+                                                                                        <img src="https://via.placeholder.com/300x200" id="avatarPro"  class="avatar  img-thumbnail" alt="avatar">
+                                                                                </a>
+                                </div>
+                                <div class="content">
+                                    <a href="/articles/view?slug=nguoi-dan-ong-lap-quoc-gia-rieng-cho-minh">
+                                        <h3>Người đàn ông lập quốc gia riêng cho mình</h3>
+                                    </a>
+                                    <a href="/articles/view?slug=nguoi-dan-ong-lap-quoc-gia-rieng-cho-minh" class="more">Xem chi tiết</a>
+                                </div>
+                            </div>
+                                                    <div class="item">
+                                <div class="img">
+                                    <a class="img_zom">
+                                                                                        <img src="https://via.placeholder.com/300x200" id="avatarPro"  class="avatar  img-thumbnail" alt="avatar">
+                                                                                </a>
+                                </div>
+                                <div class="content">
+                                    <a href="/articles/view?slug=bon-cau-vang-trong-cung-dien-anh-bi-danh-cap">
+                                        <h3>Bồn cầu vàng trong cung điện Anh bị đánh cắp</h3>
+                                    </a>
+                                    <a href="/articles/view?slug=bon-cau-vang-trong-cung-dien-anh-bi-danh-cap" class="more">Xem chi tiết</a>
+                                </div>
+                            </div>
+                                                    <div class="item">
+                                <div class="img">
+                                    <a class="img_zom">
+                                                                                        <img src="https://via.placeholder.com/300x200" id="avatarPro"  class="avatar  img-thumbnail" alt="avatar">
+                                                                                </a>
+                                </div>
+                                <div class="content">
+                                    <a href="/articles/view?slug=trung-quoc-kho-doi-pho-my-ngay-ca-khi-trump-that-cu">
+                                        <h3>Trung Quốc khó đối phó Mỹ ngay cả khi Trump thất cử</h3>
+                                    </a>
+                                    <a href="/articles/view?slug=trung-quoc-kho-doi-pho-my-ngay-ca-khi-trump-that-cu" class="more">Xem chi tiết</a>
+                                </div>
+                            </div>
+                                                    <div class="item">
+                                <div class="img">
+                                    <a class="img_zom">
+                                                                                        <img src="https://via.placeholder.com/300x200" id="avatarPro"  class="avatar  img-thumbnail" alt="avatar">
+                                                                                </a>
+                                </div>
+                                <div class="content">
+                                    <a href="/articles/view?slug=y-tuong-phat-tien-cho-dan-cua-ung-vien-tong-thong-my">
+                                        <h3>Ý tưởng phát tiền cho dân của ứng viên tổng thống Mỹ</h3>
+                                    </a>
+                                    <a href="/articles/view?slug=y-tuong-phat-tien-cho-dan-cua-ung-vien-tong-thong-my" class="more">Xem chi tiết</a>
+                                </div>
+                            </div>
+                                                    <div class="item">
+                                <div class="img">
+                                    <a class="img_zom">
+                                                                                        <img src="/assets/746faf10/articles/5-diem-an-tuong-vuot-troi-cua-xe-cao-cap-vinfast-lux.jpg" class="avatar  img-thumbnail" >
+                                                                                </a>
+                                </div>
+                                <div class="content">
+                                    <a href="/articles/view?slug=bai-viet-so-1">
+                                        <h3>Bài viết số 1</h3>
+                                    </a>
+                                    <a href="/articles/view?slug=bai-viet-so-1" class="more">Xem chi tiết</a>
+                                </div>
+                            </div>
+                                                    <div class="item">
+                                <div class="img">
+                                    <a class="img_zom">
+                                                                                        <img src="/assets/746faf10/articles/articles-1.png" class="avatar  img-thumbnail" >
+                                                                                </a>
+                                </div>
+                                <div class="content">
+                                    <a href="/articles/view?slug=anh-cong-so-day">
+                                        <h3>Anh cong so day</h3>
+                                    </a>
+                                    <a href="/articles/view?slug=anh-cong-so-day" class="more">Xem chi tiết</a>
+                                </div>
+                            </div>
+                                                    <div class="item">
+                                <div class="img">
+                                    <a class="img_zom">
+                                                                                        <img src="/assets/746faf10/articles/background-login1.jpg" class="avatar  img-thumbnail" >
+                                                                                </a>
+                                </div>
+                                <div class="content">
+                                    <a href="/articles/view?slug=asdasdas">
+                                        <h3>asdasdas</h3>
+                                    </a>
+                                    <a href="/articles/view?slug=asdasdas" class="more">Xem chi tiết</a>
+                                </div>
+                            </div>
+                                        </div>
+
+                <div class="nextBtnNews"><img src="/theme/images/next-icon.png"></div>
+                <div class="previousNews"><img src="/theme/images/prev-icon.png"></div>
+            </div>
+
+        </div>
+
+
+    </div>
+</div>
+
+    <!-- footer -->
+    <footer id="footer">
+    <div class="container">
+        <div class="row footer-top">
+            <div class="col-md-6">
+                <form action="">
+                    <input type="text" placeholder="Nhập thông tin cần tìm kiếm ...">
+                    <i class="far fa-search"></i>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <div class="footer-social">
+                    <ul>
+                        <li class="text-social"><a href="">Theo dõi chúng tôi :</a></li>
+                        <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href=""><i class="fab fa-youtube"></i></a></li>
+                        <li><a href=""><i class="fab fa-google"></i></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row footer-middle">
+
+            <div class="detail-middle cell-phone col-6 col-sm-3">
+                <img src="/theme/images/tong-dai.jpg" alt="">
+            </div>
+            <div class="detail-middle fbmobile col-6 ismb">
+                <p>Theo dõi chúng tôi</p>
+                    <ul>
+
+                            <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href=""><i class="fab fa-youtube"></i></a></li>
+                            <li><a href=""><i class="fab fa-google"></i></i></a></li>
+                        </ul>
+                </div>
+            <div class="detail-middle col-sm-3 ispc">
+                <div class="list-task">
+                    <ul>
+                        <li><a href="">Giới thiệu</a></li>
+                        <li><a href="">Tầm nhìn sứ mệnh</a></li>
+                        <li><a href="">Giá trị cốt lõi</a></li>
+                        <li><a href="">Hoạt động cộng đồng</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="detail-middle col-sm-3 ispc">
+                <div class="list-task">
+                    <ul>
+                        <li><a href="">Dịch vụ khách hàng</a></li>
+                        <li><a href="">Thay đổi thông tin hợp đồng bảo hiểm</a></li>
+                        <li><a href="">Tra cứu thông tin</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="detail-middle col-sm-3 ispc">
+                <div class="list-task">
+                    <ul>
+                        <li><a href="">Giải quyết quyền lợi bảo hiểm</a></li>
+                        <li><a href="">Kênh đóng phí bảo hiểm</a></li>
+                        <li><a href="">Những câu hỏi thường gặp</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="footer-bottom row">
+            <div class="footer-logo col-3 col-sm-2">
+                <div class="row">
+                    <img src="/theme/images/logo-vinahome.png" alt="">
+                </div>
+            </div>
+            <div class="footer-company col-9  col-sm-6">
+                <h3>CÔNG TY CỔ PHẦN DỊCH VỤ Y TẾ ĐIỆN TỬ</h3>
+                <p>Trụ sở chính : Số 64 Phố Lụa, Phường Vạn Phúc, quận Hà Đông, thành phố Hà Nội</p>
+                <p>VPGD: Tầng 8, Toàn nhà Hội nhà báo Việt Nam,Đường Dương Đình Nghệ, Phường Yên Hòa</p>
+            </div>
+            <div class="coppy col-sm-4">
+                <p class="ispc">Ghi rõ nguồn: "https://mbacsi.vn" Khi sử dụng thông tin từ website này</p>
+                <p class="copy">Copyright <i class="fal fa-copyright"></i> 2019 MbacsMbacsi.vn</p>
+            </div>
+        </div>
+    </div>
+</footer>
+ 
+<![CDATA[YII-DYNAMIC-1]]><style>#yii-debug-toolbar-logo{position:fixed;right:31px;bottom:4px}@media print{.yii-debug-toolbar{display:none !important}}.yii-debug-toolbar{font:11px Verdana,Arial,sans-serif;text-align:left;width:96px;transition:width .3s ease;z-index:1000000}.yii-debug-toolbar.yii-debug-toolbar_active:not(.yii-debug-toolbar_animating) .yii-debug-toolbar__bar{overflow:visible;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.yii-debug-toolbar.yii-debug-toolbar_iframe_active:not(.yii-debug-toolbar_animating) .yii-debug-toolbar__resize-handle{display:block;height:4px;cursor:ns-resize;margin-bottom:0;z-index:1000001;position:absolute;left:0;right:0}.yii-debug-toolbar:not(.yii-debug-toolbar_active) .yii-debug-toolbar__bar,.yii-debug-toolbar.yii-debug-toolbar_animating .yii-debug-toolbar__bar{height:40px}.yii-debug-toolbar_active{width:100%}.yii-debug-toolbar_active .yii-debug-toolbar__toggle-icon{-webkit-transform:rotate(0);transform:rotate(0)}.yii-debug-toolbar_position_top{margin:0 0 20px 0;width:100%}.yii-debug-toolbar_position_bottom{position:fixed;right:0;bottom:0;margin:0}.yii-debug-toolbar__bar{position:relative;padding:0;font:11px Verdana,Arial,sans-serif;text-align:left;overflow:hidden;box-sizing:content-box;display:flex;flex-wrap:wrap;background:#fff;background:-moz-linear-gradient(top, white 0%, #f7f7f7 100%);background:-webkit-linear-gradient(top, white 0%, #f7f7f7 100%);background:linear-gradient(to bottom, white 0%, #f7f7f7 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#f7f7f7", GradientType=0);border:1px solid rgba(0,0,0,.11);direction:ltr}.yii-debug-toolbar__bar::after{content:"";display:table;clear:both}.yii-debug-toolbar__view{height:0;overflow:hidden;background:#fff}.yii-debug-toolbar__view iframe{margin:0;padding:10px 0 0;height:100%;width:100%;border:0}.yii-debug-toolbar_iframe_active .yii-debug-toolbar__view{height:100%}.yii-debug-toolbar_iframe_active .yii-debug-toolbar__toggle-icon{-webkit-transform:rotate(90deg);transform:rotate(90deg)}.yii-debug-toolbar_iframe_active .yii-debug-toolbar__external{display:block}.yii-debug-toolbar_iframe_animating .yii-debug-toolbar__view{transition:height .3s ease}.yii-debug-toolbar__block{margin:0;border-right:1px solid rgba(0,0,0,.11);border-bottom:1px solid rgba(0,0,0,.11);padding:4px 8px;line-height:32px;white-space:nowrap}@media(max-width: 767.98px){.yii-debug-toolbar__block{flex-grow:1;text-align:center}}.yii-debug-toolbar__block a{display:inline-block;text-decoration:none;color:#000}.yii-debug-toolbar__block img{vertical-align:middle}.yii-debug-toolbar__block_active,.yii-debug-toolbar__ajax:hover{background:#f7f7f7;background:-moz-linear-gradient(top, #f7f7f7 0%, #e0e0e0 100%);background:-webkit-linear-gradient(top, #f7f7f7 0%, #e0e0e0 100%);background:linear-gradient(to bottom, #f7f7f7 0%, #e0e0e0 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#f7f7f7", endColorstr="#e0e0e0", GradientType=0)}.yii-debug-toolbar__label{display:inline-block;padding:2px 4px;font-size:12px;font-weight:normal;line-height:14px;white-space:nowrap;vertical-align:middle;max-width:100px;overflow-x:hidden;text-overflow:ellipsis;color:#fff;text-shadow:0 -1px 0 rgba(0,0,0,.25);background-color:#737373;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px}.yii-debug-toolbar__label:empty{display:none}a.yii-debug-toolbar__label:hover,a.yii-debug-toolbar__label:focus{color:#fff;text-decoration:none;cursor:pointer}.yii-debug-toolbar__label_important,.yii-debug-toolbar__label_error{background-color:#b94a48}.yii-debug-toolbar__label_important[href]{background-color:#953b39}.yii-debug-toolbar__label_warning,.yii-debug-toolbar__badge_warning{background-color:#f89406}.yii-debug-toolbar__label_warning[href]{background-color:#c67605}.yii-debug-toolbar__label_success{background-color:#217822}.yii-debug-toolbar__label_success[href]{background-color:#356635}.yii-debug-toolbar__label_info{background-color:#0b72b8}.yii-debug-toolbar__label_info[href]{background-color:#2d6987}.yii-debug-toolbar__label_inverse,.yii-debug-toolbar__badge_inverse{background-color:#333}.yii-debug-toolbar__label_inverse[href],.yii-debug-toolbar__badge_inverse[href]{background-color:#1a1a1a}.yii-debug-toolbar__title{background:#f7f7f7;background:-moz-linear-gradient(top, #f7f7f7 0%, #e0e0e0 100%);background:-webkit-linear-gradient(top, #f7f7f7 0%, #e0e0e0 100%);background:linear-gradient(to bottom, #f7f7f7 0%, #e0e0e0 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#f7f7f7", endColorstr="#e0e0e0", GradientType=0)}.yii-debug-toolbar__block_last{width:80px;height:40px;float:left}.yii-debug-toolbar__toggle,.yii-debug-toolbar__external{cursor:pointer;position:absolute;width:30px;height:30px;font-size:25px;font-weight:100;line-height:28px;color:#fff;text-align:center;opacity:.5;filter:alpha(opacity=50);transition:opacity .3s ease}.yii-debug-toolbar__toggle:hover,.yii-debug-toolbar__toggle:focus,.yii-debug-toolbar__external:hover,.yii-debug-toolbar__external:focus{color:#fff;text-decoration:none;opacity:.9;filter:alpha(opacity=90)}.yii-debug-toolbar__toggle-icon,.yii-debug-toolbar__external-icon{display:inline-block;background-position:50% 50%;background-repeat:no-repeat}.yii-debug-toolbar__toggle{right:10px;bottom:4px}.yii-debug-toolbar__toggle-icon{padding:7px 0;width:10px;height:16px;background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMCAwIDUwIDUwIj48cGF0aCBmaWxsPSIjNDQ0IiBkPSJNMTUuNTYzIDQwLjgzNmEuOTk3Ljk5NyAwIDAgMCAxLjQxNCAwbDE1LTE1YTEgMSAwIDAgMCAwLTEuNDE0bC0xNS0xNWExIDEgMCAwIDAtMS40MTQgMS40MTRMMjkuODU2IDI1LjEzIDE1LjU2MyAzOS40MmExIDEgMCAwIDAgMCAxLjQxNHoiLz48L3N2Zz4=");transition:-webkit-transform .3s ease-out;transition:transform .3s ease-out;-webkit-transform:rotate(180deg);transform:rotate(180deg)}.yii-debug-toolbar__external{display:none;right:50px;bottom:4px}.yii-debug-toolbar__external-icon{padding:8px 0;width:14px;height:14px;background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMCAwIDUwIDUwIj48cGF0aCBmaWxsPSIjNDQ0IiBkPSJNMzkuNjQyIDkuNzIyYTEuMDEgMS4wMSAwIDAgMC0uMzgyLS4wNzdIMjguMTAzYTEgMSAwIDAgMCAwIDJoOC43NDNMMjEuNyAyNi43OWExIDEgMCAwIDAgMS40MTQgMS40MTVMMzguMjYgMTMuMDZ2OC43NDNhMSAxIDAgMCAwIDIgMFYxMC42NDZhMS4wMDUgMS4wMDUgMCAwIDAtLjYxOC0uOTI0eiIvPjxwYXRoIGQ9Ik0zOS4yNiAyNy45ODVhMSAxIDAgMCAwLTEgMXYxMC42NmgtMjh2LTI4aDEwLjY4M2ExIDEgMCAwIDAgMC0ySDkuMjZhMSAxIDAgMCAwLTEgMXYzMGExIDEgMCAwIDAgMSAxaDMwYTEgMSAwIDAgMCAxLTF2LTExLjY2YTEgMSAwIDAgMC0xLTF6Ii8+PC9zdmc+")}.yii-debug-toolbar__switch-icon{margin-left:10px;padding:5px 10px;width:18px;height:18px;background-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxuczpzdmc9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDUwIDUwIiB2ZXJzaW9uPSIxLjEiPjxwYXRoIGQ9Im00MS4xIDIzYy0wLjYgMC0xIDAuNC0xIDF2MTAuN2wtMjUuNi0wLjFjMCAwIDAtMiAwLTIuOCAwLTAuOC0wLjctMS0xLTAuNmwtMy41IDMuNWMtMC42IDAuNi0wLjYgMS4zIDAgMmwzLjQgMy40YzAuNCAwLjQgMS4xIDAuMiAxLTAuNmwwLTIuOWMwIDAgMjAuOCAwLjEgMjYuNiAwIDAuNiAwIDEtMC40IDEtMXYtMTEuN2MwLTAuNi0wLjQtMS0xLTF6TTkgMjYuOSA5IDI2LjkgOSAyNi45IDkgMjYuOSIvPjxwYXRoIGQ9Im05IDI2LjljMC42IDAgMS0wLjQgMS0xdi0xMC43bDI1LjYgMC4xYzAgMCAwIDIgMCAyLjggMCAwLjggMC43IDEgMSAwLjZsMy41LTMuNWMwLjYtMC42IDAuNi0xLjMgMC0ybC0zLjQtMy40Yy0wLjQtMC40LTEuMS0wLjItMSAwLjZsMCAyLjljMCAwLTIwLjgtMC4xLTI2LjYgMC0wLjYgMC0xIDAuNC0xIDF2MTEuN2MwIDAuNiAwLjQgMSAxIDF6Ii8+PC9zdmc+")}.yii-debug-toolbar__ajax{position:relative}.yii-debug-toolbar__ajax:hover .yii-debug-toolbar__ajax_info,.yii-debug-toolbar__ajax:focus .yii-debug-toolbar__ajax_info{visibility:visible}.yii-debug-toolbar__ajax a{color:#337ab7}.yii-debug-toolbar__ajax table{width:100%;table-layout:auto;border-spacing:0;border-collapse:collapse}.yii-debug-toolbar__ajax table td{padding:4px;font-size:12px;line-height:normal;vertical-align:top;border-top:1px solid #ddd}.yii-debug-toolbar__ajax table th{padding:4px;font-size:11px;line-height:normal;vertical-align:bottom;border-bottom:2px solid #ddd}.yii-debug-toolbar__ajax_info{visibility:hidden;transition:visibility .2s linear;background-color:#fff;box-shadow:inset 0 -10px 10px -10px #e1e1e1;position:absolute;bottom:40px;left:-1px;padding:10px;max-width:480px;max-height:480px;word-wrap:break-word;overflow:hidden;overflow-y:auto;box-sizing:border-box;border:1px solid rgba(0,0,0,.11);z-index:1000001}.yii-debug-toolbar__ajax_request_status{color:#fff;padding:2px 5px}.yii-debug-toolbar__ajax_request_url{max-width:170px;overflow:hidden;text-overflow:ellipsis}
+</style><script>(function () {
+    'use strict';
+
+    var findToolbar = function () {
+            return document.querySelector('#yii-debug-toolbar');
+        },
+        ajax = function (url, settings) {
+            var xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
+            settings = settings || {};
+            xhr.open(settings.method || 'GET', url, true);
+            xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+            xhr.setRequestHeader('Accept', 'text/html');
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4) {
+                    if (xhr.status === 200 && settings.success) {
+                        settings.success(xhr);
+                    } else if (xhr.status !== 200 && settings.error) {
+                        settings.error(xhr);
+                    }
+                }
+            };
+            xhr.send(settings.data || '');
+        },
+        url,
+        div,
+        toolbarEl = findToolbar(),
+        toolbarAnimatingClass = 'yii-debug-toolbar_animating',
+        barSelector = '.yii-debug-toolbar__bar',
+        viewSelector = '.yii-debug-toolbar__view',
+        blockSelector = '.yii-debug-toolbar__block',
+        toggleSelector = '.yii-debug-toolbar__toggle',
+        externalSelector = '.yii-debug-toolbar__external',
+
+        CACHE_KEY = 'yii-debug-toolbar',
+        ACTIVE_STATE = 'active',
+
+        animationTime = 300,
+
+        activeClass = 'yii-debug-toolbar_active',
+        iframeActiveClass = 'yii-debug-toolbar_iframe_active',
+        iframeAnimatingClass = 'yii-debug-toolbar_iframe_animating',
+        titleClass = 'yii-debug-toolbar__title',
+        blockClass = 'yii-debug-toolbar__block',
+        ignoreClickClass = 'yii-debug-toolbar__ignore_click',
+        blockActiveClass = 'yii-debug-toolbar__block_active',
+        requestStack = [];
+
+    if (toolbarEl) {
+        url = toolbarEl.getAttribute('data-url');
+
+        ajax(url, {
+            success: function (xhr) {
+                div = document.createElement('div');
+                div.innerHTML = xhr.responseText;
+
+                toolbarEl.parentNode && toolbarEl.parentNode.replaceChild(div, toolbarEl);
+
+                showToolbar(findToolbar());
+
+                var event;
+                if (typeof(Event) === 'function') {
+                    event = new Event('yii.debug.toolbar_attached', {'bubbles': true});
+                } else {
+                    event = document.createEvent('Event');
+                    event.initEvent('yii.debug.toolbar_attached', true, true);
+                }
+
+                div.dispatchEvent(event);
+            },
+            error: function (xhr) {
+                toolbarEl.innerText = xhr.responseText;
+            }
+        });
+    }
+
+    function showToolbar(toolbarEl) {
+        var barEl = toolbarEl.querySelector(barSelector),
+            viewEl = toolbarEl.querySelector(viewSelector),
+            toggleEl = toolbarEl.querySelector(toggleSelector),
+            externalEl = toolbarEl.querySelector(externalSelector),
+            blockEls = barEl.querySelectorAll(blockSelector),
+            blockLinksEls = document.querySelectorAll(blockSelector + ':not(.' + titleClass + ') a'),
+            iframeEl = viewEl.querySelector('iframe'),
+            iframeHeight = function () {
+                return (window.innerHeight * (toolbarEl.dataset.height / 100) - barEl.clientHeight) + 'px';
+            },
+            isIframeActive = function () {
+                return toolbarEl.classList.contains(iframeActiveClass);
+            },
+            resizeIframe = function(mouse) {
+                var availableHeight = window.innerHeight - barEl.clientHeight;
+                viewEl.style.height = Math.min(availableHeight, availableHeight - mouse.y) + "px";
+            },
+            showIframe = function (href) {
+                toolbarEl.classList.add(iframeAnimatingClass);
+                toolbarEl.classList.add(iframeActiveClass);
+
+                iframeEl.src = externalEl.href = href;
+                iframeEl.removeAttribute('tabindex');
+
+                viewEl.style.height = iframeHeight();
+                setTimeout(function () {
+                    toolbarEl.classList.remove(iframeAnimatingClass);
+                }, animationTime);
+            },
+            hideIframe = function () {
+                toolbarEl.classList.add(iframeAnimatingClass);
+                toolbarEl.classList.remove(iframeActiveClass);
+                iframeEl.setAttribute("tabindex", "-1");
+                removeActiveBlocksCls();
+
+                externalEl.href = '#';
+                viewEl.style.height = '';
+                setTimeout(function () {
+                    toolbarEl.classList.remove(iframeAnimatingClass);
+                }, animationTime);
+            },
+            removeActiveBlocksCls = function () {
+                [].forEach.call(blockEls, function (el) {
+                    el.classList.remove(blockActiveClass);
+                });
+            },
+            toggleToolbarClass = function (className) {
+                toolbarEl.classList.add(toolbarAnimatingClass);
+                if (toolbarEl.classList.contains(className)) {
+                    toolbarEl.classList.remove(className);
+                    [].forEach.call(blockLinksEls, function (el) {
+                        el.setAttribute('tabindex', "-1");
+                    });
+                } else {
+                    [].forEach.call(blockLinksEls, function (el) {
+                        el.removeAttribute('tabindex');
+                    });
+                    toolbarEl.classList.add(className);
+                }
+                setTimeout(function () {
+                    toolbarEl.classList.remove(toolbarAnimatingClass);
+                }, animationTime);
+            },
+            toggleStorageState = function (key, value) {
+                if (window.localStorage) {
+                    var item = localStorage.getItem(key);
+
+                    if (item) {
+                        localStorage.removeItem(key);
+                    } else {
+                        localStorage.setItem(key, value);
+                    }
+                }
+            },
+            restoreStorageState = function (key) {
+                if (window.localStorage) {
+                    return localStorage.getItem(key);
+                }
+            },
+            togglePosition = function () {
+                if (isIframeActive()) {
+                    hideIframe();
+                } else {
+                    toggleToolbarClass(activeClass);
+                    toggleStorageState(CACHE_KEY, ACTIVE_STATE);
+                }
+            };
+
+        if (restoreStorageState(CACHE_KEY) === ACTIVE_STATE) {
+            var transition = toolbarEl.style.transition;
+            toolbarEl.style.transition = 'none';
+            toolbarEl.classList.add(activeClass);
+            setTimeout(function () {
+                toolbarEl.style.transition = transition;
+            }, animationTime);
+        } else {
+            [].forEach.call(blockLinksEls, function (el) {
+                el.setAttribute('tabindex', "-1");
+            });
+        }
+
+        toolbarEl.style.display = 'block';
+
+        window.onresize = function () {
+            if (toolbarEl.classList.contains(iframeActiveClass)) {
+                viewEl.style.height = iframeHeight();
+            }
+        };
+
+        toolbarEl.addEventListener("mousedown", function(e) {
+            if (isIframeActive() && (e.y - toolbarEl.offsetTop < 4 /* 4px click zone */)) {
+                document.addEventListener("mousemove", resizeIframe, false);
+            }
+        }, false);
+
+        document.addEventListener("mouseup", function(){
+            if (isIframeActive()) {
+                document.removeEventListener("mousemove", resizeIframe, false);
+            }
+        }, false);
+
+        barEl.onclick = function (e) {
+            var target = e.target,
+                block = findAncestor(target, blockClass);
+
+            if (block
+                && !block.classList.contains(titleClass)
+                && !block.classList.contains(ignoreClickClass)
+                && e.which !== 2 && !e.ctrlKey // not mouse wheel and not ctrl+click
+            ) {
+                while (target !== this) {
+                    if (target.href) {
+                        removeActiveBlocksCls();
+                        block.classList.add(blockActiveClass);
+                        showIframe(target.href);
+                    }
+                    target = target.parentNode;
+                }
+
+                e.preventDefault();
+            }
+        };
+
+        toggleEl.onclick = togglePosition;
+    }
+
+    function findAncestor(el, cls) {
+        while ((el = el.parentElement) && !el.classList.contains(cls)) ;
+        return el;
+    }
+
+    function renderAjaxRequests() {
+        var requestCounter = document.getElementsByClassName('yii-debug-toolbar__ajax_counter');
+        if (!requestCounter.length) {
+            return;
+        }
+        var ajaxToolbarPanel = document.querySelector('.yii-debug-toolbar__ajax');
+        var tbodies = document.getElementsByClassName('yii-debug-toolbar__ajax_requests');
+        var state = 'ok';
+        if (tbodies.length) {
+            var tbody = tbodies[0];
+            var rows = document.createDocumentFragment();
+            if (requestStack.length) {
+                var firstItem = requestStack.length > 20 ? requestStack.length - 20 : 0;
+                for (var i = firstItem; i < requestStack.length; i++) {
+                    var request = requestStack[i];
+                    var row = document.createElement('tr');
+                    rows.appendChild(row);
+
+                    var methodCell = document.createElement('td');
+                    methodCell.innerHTML = request.method;
+                    row.appendChild(methodCell);
+
+                    var statusCodeCell = document.createElement('td');
+                    var statusCode = document.createElement('span');
+                    if (request.statusCode < 300) {
+                        statusCode.setAttribute('class', 'yii-debug-toolbar__ajax_request_status yii-debug-toolbar__label_success');
+                    } else if (request.statusCode < 400) {
+                        statusCode.setAttribute('class', 'yii-debug-toolbar__ajax_request_status yii-debug-toolbar__label_warning');
+                    } else {
+                        statusCode.setAttribute('class', 'yii-debug-toolbar__ajax_request_status yii-debug-toolbar__label_error');
+                    }
+                    statusCode.textContent = request.statusCode || '-';
+                    statusCodeCell.appendChild(statusCode);
+                    row.appendChild(statusCodeCell);
+
+                    var pathCell = document.createElement('td');
+                    pathCell.className = 'yii-debug-toolbar__ajax_request_url';
+                    pathCell.innerHTML = request.url;
+                    pathCell.setAttribute('title', request.url);
+                    row.appendChild(pathCell);
+
+                    var durationCell = document.createElement('td');
+                    durationCell.className = 'yii-debug-toolbar__ajax_request_duration';
+                    if (request.duration) {
+                        durationCell.innerText = request.duration + " ms";
+                    } else {
+                        durationCell.innerText = '-';
+                    }
+                    row.appendChild(durationCell);
+                    row.appendChild(document.createTextNode(' '));
+
+                    var profilerCell = document.createElement('td');
+                    if (request.profilerUrl) {
+                        var profilerLink = document.createElement('a');
+                        profilerLink.setAttribute('href', request.profilerUrl);
+                        profilerLink.innerText = request.profile;
+                        profilerCell.appendChild(profilerLink);
+                    } else {
+                        profilerCell.innerText = 'n/a';
+                    }
+                    row.appendChild(profilerCell);
+
+                    if (request.error) {
+                        if (state !== "loading" && i > requestStack.length - 4) {
+                            state = 'error';
+                        }
+                    } else if (request.loading) {
+                        state = 'loading'
+                    }
+                    row.className = 'yii-debug-toolbar__ajax_request';
+                }
+                while (tbody.firstChild) {
+                    tbody.removeChild(tbody.firstChild);
+                }
+                tbody.appendChild(rows);
+            }
+            ajaxToolbarPanel.style.display = 'block';
+        }
+        requestCounter[0].innerText = requestStack.length;
+        var className = 'yii-debug-toolbar__label yii-debug-toolbar__ajax_counter';
+        if (state === 'ok') {
+            className += ' yii-debug-toolbar__label_success';
+        } else if (state === 'error') {
+            className += ' yii-debug-toolbar__label_error';
+        }
+        requestCounter[0].className = className;
+    }
+
+    var proxied = XMLHttpRequest.prototype.open;
+
+    XMLHttpRequest.prototype.open = function (method, url, async, user, pass) {
+        var self = this;
+
+        // fix https://github.com/yiisoft/yii2-debug/issues/326
+        /* prevent logging AJAX calls to static and inline files, like templates */
+        if (url && url.substr(0, 1) === '/' && !url.match(new RegExp('{{ excluded_ajax_paths }}'))) {
+            var stackElement = {
+                loading: true,
+                error: false,
+                url: url,
+                method: method,
+                start: new Date()
+            };
+            requestStack.push(stackElement);
+            this.addEventListener('readystatechange', function () {
+                if (self.readyState === 4) {
+                    stackElement.duration = self.getResponseHeader('X-Debug-Duration') || new Date() - stackElement.start;
+                    stackElement.loading = false;
+                    stackElement.statusCode = self.status;
+                    stackElement.error = self.status < 200 || self.status >= 400;
+                    stackElement.profile = self.getResponseHeader('X-Debug-Tag');
+                    stackElement.profilerUrl = self.getResponseHeader('X-Debug-Link');
+                    renderAjaxRequests();
+                }
+            }, false);
+            renderAjaxRequests();
+        }
+        proxied.apply(this, Array.prototype.slice.call(arguments));
+    };
+
+    // catch fetch AJAX requests
+    if (window.fetch) {
+        var originalFetch = window.fetch;
+
+        window.fetch = function (input, init) {
+            var method;
+            var url;
+            if (typeof input === 'string') {
+                method = (init && init.method) || 'GET';
+                url = input;
+            } else if (window.URL && input instanceof URL) { // fix https://github.com/yiisoft/yii2-debug/issues/296
+                method = (init && init.method) || 'GET';
+                url = input.href;
+            } else if (window.Request && input instanceof Request) {
+                method = input.method;
+                url = input.url;
+            }
+            var promise = originalFetch(input, init);
+
+            /* prevent logging AJAX calls to static and inline files, like templates */
+            if (url && url.substr(0, 1) === '/' && !url.match(new RegExp('{{ excluded_ajax_paths }}'))) {
+                var stackElement = {
+                    loading: true,
+                    error: false,
+                    url: url,
+                    method: method,
+                    start: new Date()
+                };
+                requestStack.push(stackElement);
+                promise.then(function (response) {
+                    stackElement.duration = response.headers.get('X-Debug-Duration') || new Date() - stackElement.start;
+                    stackElement.loading = false;
+                    stackElement.statusCode = response.status;
+                    stackElement.error = response.status < 200 || response.status >= 400;
+                    stackElement.profile = response.headers.get('X-Debug-Tag');
+                    stackElement.profilerUrl = response.headers.get('X-Debug-Link');
+                    renderAjaxRequests();
+
+                    return response;
+                }).catch(function (error) {
+                    stackElement.loading = false;
+                    stackElement.error = true;
+                    renderAjaxRequests();
+
+                    throw error;
+                });
+                renderAjaxRequests();
+            }
+
+            return promise;
+        };
+    }
+
+})();
+</script><script src="/assets/57c19368/jquery.js"></script>
+<script src="/assets/c217496c/yii.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="/theme/js/app.js"></script>
+<script src="/js/app.js"></script></body>
+</html>
+";s:19:"dynamicPlaceholders";a:2:{s:25:"<![CDATA[YII-DYNAMIC-0]]>";s:40:"return yii\helpers\Html::csrfMetaTags();";s:25:"<![CDATA[YII-DYNAMIC-1]]>";s:55:"return Yii::$app->getModule("debug")->getToolbarHtml();";}s:6:"format";s:4:"html";s:7:"version";s:3:"1.1";s:10:"statusCode";i:200;s:10:"statusText";s:2:"OK";s:7:"headers";a:4:{s:12:"content-type";a:1:{i:0;s:24:"text/html; charset=UTF-8";}s:11:"x-debug-tag";a:1:{i:0;s:13:"5d832f63a8b92";}s:16:"x-debug-duration";a:1:{i:0;s:3:"257";}s:12:"x-debug-link";a:1:{i:0;s:37:"/debug/default/view?tag=5d832f63a8b92";}}}i:1;N;}

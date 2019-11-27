@@ -1,0 +1,654 @@
+/*
+ Navicat Premium Data Transfer
+
+ Source Server         : 127.0.0.1
+ Source Server Type    : MySQL
+ Source Server Version : 100316
+ Source Host           : localhost:3306
+ Source Schema         : bao-hiem
+
+ Target Server Type    : MySQL
+ Target Server Version : 100316
+ File Encoding         : 65001
+
+ Date: 10/09/2019 16:03:15
+*/
+
+SET NAMES utf8mb4;
+SET FOREIGN_KEY_CHECKS = 0;
+
+-- ----------------------------
+-- Table structure for articles
+-- ----------------------------
+DROP TABLE IF EXISTS `articles`;
+CREATE TABLE `articles`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `slug` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `desc` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL,
+  `content` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL,
+  `avatar` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL DEFAULT NULL,
+  `cat_articles_id` int(11) NOT NULL,
+  `file` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL,
+  `author` int(11) NOT NULL,
+  `status` int(11) NOT NULL,
+  `is_hot_new` int(11) NULL DEFAULT NULL,
+  `views` int(11) NULL DEFAULT NULL,
+  `created_at` int(11) NOT NULL,
+  `updated_at` int(11) NOT NULL,
+  `is_del` int(1) NULL DEFAULT NULL,
+  `tags` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL,
+  PRIMARY KEY (`id`) USING BTREE,
+  UNIQUE INDEX `title`(`title`) USING BTREE,
+  INDEX `catName`(`cat_articles_id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 12 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of articles
+-- ----------------------------
+INSERT INTO `articles` VALUES (10, 'Fox Sports: \'Việt Nam thi đấu ổn định hơn Thái Lan\'', 'fox-sports-viet-nam-thi-dau-on-dinh-hon-thai-lan', '<p class=\"Normal\">\"Việt Nam chơi ổn định hơn nhiều, v&agrave; c&oacute; thể vượt l&ecirc;n ngay ph&uacute;t đầu ti&ecirc;n sau sự mất tập trung của h&agrave;ng thủ Th&aacute;i Lan. Tuy nhi&ecirc;n, Nguyễn Văn To&agrave;n lại dứt điểm chệch cột dọc\", b&agrave;i viết c&oacute; đoạn.</p>\r\n<p class=\"Normal\">D&ugrave; chơi tr&ecirc;n s&acirc;n kh&aacute;ch v&agrave; đối thủ chơi rắn, Việt Nam giữ được thế trận v&agrave; c&oacute; những t&igrave;nh huống ăn b&agrave;n r&otilde; n&eacute;t. Đội qu&acirc;n của Park Hang-seo cầm b&oacute;ng 45%, tung ra bốn pha dứt điểm v&agrave; một lần s&uacute;t tr&uacute;ng đ&iacute;ch. Chủ nh&agrave; Th&aacute;i Lan chỉ nhỉnh hơn một ch&uacute;t, với s&aacute;u lần dứt điểm v&agrave; hai tr&uacute;ng đ&iacute;ch.</p>', '<p class=\"Normal\">\"Việt Nam chơi ổn định hơn nhiều, v&agrave; c&oacute; thể vượt l&ecirc;n ngay ph&uacute;t đầu ti&ecirc;n sau sự mất tập trung của h&agrave;ng thủ Th&aacute;i Lan. Tuy nhi&ecirc;n, Nguyễn Văn To&agrave;n lại dứt điểm chệch cột dọc\", b&agrave;i viết c&oacute; đoạn.</p>\r\n<p class=\"Normal\">D&ugrave; chơi tr&ecirc;n s&acirc;n kh&aacute;ch v&agrave; đối thủ chơi rắn, Việt Nam giữ được thế trận v&agrave; c&oacute; những t&igrave;nh huống ăn b&agrave;n r&otilde; n&eacute;t. Đội qu&acirc;n của Park Hang-seo cầm b&oacute;ng 45%, tung ra bốn pha dứt điểm v&agrave; một lần s&uacute;t tr&uacute;ng đ&iacute;ch. Chủ nh&agrave; Th&aacute;i Lan chỉ nhỉnh hơn một ch&uacute;t, với s&aacute;u lần dứt điểm v&agrave; hai tr&uacute;ng đ&iacute;ch.</p>\r\n<p class=\"Normal\">\"Việt Nam chơi ổn định hơn nhiều, v&agrave; c&oacute; thể vượt l&ecirc;n ngay ph&uacute;t đầu ti&ecirc;n sau sự mất tập trung của h&agrave;ng thủ Th&aacute;i Lan. Tuy nhi&ecirc;n, Nguyễn Văn To&agrave;n lại dứt điểm chệch cột dọc\", b&agrave;i viết c&oacute; đoạn.</p>\r\n<p class=\"Normal\">D&ugrave; chơi tr&ecirc;n s&acirc;n kh&aacute;ch v&agrave; đối thủ chơi rắn, Việt Nam giữ được thế trận v&agrave; c&oacute; những t&igrave;nh huống ăn b&agrave;n r&otilde; n&eacute;t. Đội qu&acirc;n của Park Hang-seo cầm b&oacute;ng 45%, tung ra bốn pha dứt điểm v&agrave; một lần s&uacute;t tr&uacute;ng đ&iacute;ch. Chủ nh&agrave; Th&aacute;i Lan chỉ nhỉnh hơn một ch&uacute;t, với s&aacute;u lần dứt điểm v&agrave; hai tr&uacute;ng đ&iacute;ch.</p>\r\n<p class=\"Normal\">\"Việt Nam chơi ổn định hơn nhiều, v&agrave; c&oacute; thể vượt l&ecirc;n ngay ph&uacute;t đầu ti&ecirc;n sau sự mất tập trung của h&agrave;ng thủ Th&aacute;i Lan. Tuy nhi&ecirc;n, Nguyễn Văn To&agrave;n lại dứt điểm chệch cột dọc\", b&agrave;i viết c&oacute; đoạn.</p>\r\n<p class=\"Normal\">D&ugrave; chơi tr&ecirc;n s&acirc;n kh&aacute;ch v&agrave; đối thủ chơi rắn, Việt Nam giữ được thế trận v&agrave; c&oacute; những t&igrave;nh huống ăn b&agrave;n r&otilde; n&eacute;t. Đội qu&acirc;n của Park Hang-seo cầm b&oacute;ng 45%, tung ra bốn pha dứt điểm v&agrave; một lần s&uacute;t tr&uacute;ng đ&iacute;ch. Chủ nh&agrave; Th&aacute;i Lan chỉ nhỉnh hơn một ch&uacute;t, với s&aacute;u lần dứt điểm v&agrave; hai tr&uacute;ng đ&iacute;ch.</p>', 'post_1.jpg', 1, NULL, 1, 1, 0, 100000, 1567738900, 1567743996, 1, 'tagName,tabName,get');
+INSERT INTO `articles` VALUES (11, 'Lụt chạm nóc nhà', 'lut-cham-noc-nha', '<p class=\"description\"><span class=\"location-stamp\">H&Agrave; TĨNH</span>Đ&atilde; quen với việc ngập lụt, song h&agrave;ng ngh&igrave;n người d&acirc;n Phương Mỹ (huyện Hương Kh&ecirc;) vẫn rất lo lắng khi đ&ecirc;m 5/9 nước lũ tiếp tục l&ecirc;n.</p>\r\n<article class=\"content_detail fck_detail width_common\">\r\n<div id=\"article_content\" class=\"block_ads_connect\">\r\n<div class=\"item_slide_show clearfix\">\r\n<div class=\"block_thumb_slide_show\">&nbsp;</div>\r\n</div>\r\n</div>\r\n</article>', '<div class=\"item_slide_show clearfix\">\r\n<div class=\"desc_cation\">\r\n<p>Đ&atilde; quen với lũ lụt n&ecirc;n c&aacute;c gia đ&igrave;nh ở Phương Mỹ khi l&agrave;m nh&agrave; đều c&oacute; một cửa x&eacute;p nhỏ ph&iacute;a gần m&aacute;i để c&oacute; thể leo l&ecirc;n g&aacute;c x&eacute;p v&agrave; nhận tiếp tế từ b&ecirc;n ngo&agrave;i th&ocirc;ng qua đ&oacute;.&nbsp;</p>\r\n</div>\r\n</div>\r\n<div class=\"item_slide_show clearfix\">\r\n<div class=\"block_thumb_slide_show\"><img id=\"vne_slide_image_4\" class=\"left displayAfterResize vne_lazy_image lazyloaded\" src=\"https://i-vnexpress.vnecdn.net/2019/09/05/lu-ha-tinh-5-1567698807_680x0.jpg\" alt=\"Lụt chạm n&oacute;c nh&agrave;\" data-reference-id=\"26760950\" data-original=\"https://i-vnexpress.vnecdn.net/2019/09/05/lu-ha-tinh-5-1567698807_680x0.jpg\" data-component-caption=\"&amp;lt;p&amp;gt;\r\n	D&ugrave; c&oacute; chuẩn bị, một số nh&agrave; d&acirc;n vẫn kh&ocirc;ng kịp &amp;quot;chạy&amp;quot; những đồ đạc lớn như b&agrave;n ghế, tủ gỗ.&amp;lt;/p&amp;gt;\r\n&amp;lt;p&amp;gt;\r\n	&amp;quot;Sau đợt lũ n&agrave;y, những dụng cụ n&agrave;o c&ograve;n d&ugrave;ng được th&igrave; sẽ lau rửa để sử dụng. Đối với c&aacute;c thiết bị điện tử bị hư hỏng th&igrave; phải sắm mới&amp;quot;, b&agrave; Ho&agrave;ng Thị Tường - chủ nh&agrave; n&oacute;i.&amp;lt;/p&amp;gt;\" /></div>\r\n<div class=\"desc_cation\">\r\n<p>D&ugrave; c&oacute; chuẩn bị, một số nh&agrave; d&acirc;n vẫn kh&ocirc;ng kịp \"chạy\" những đồ đạc lớn như b&agrave;n ghế, tủ gỗ.</p>\r\n<p>\"Sau đợt lũ n&agrave;y, những dụng cụ n&agrave;o c&ograve;n d&ugrave;ng được th&igrave; sẽ lau rửa để sử dụng. Đối với c&aacute;c thiết bị điện tử bị hư hỏng th&igrave; phải sắm mới\", b&agrave; Ho&agrave;ng Thị Tường - chủ nh&agrave; n&oacute;i.</p>\r\n</div>\r\n</div>\r\n<div class=\"item_slide_show clearfix\">\r\n<div class=\"block_thumb_slide_show\"><img id=\"vne_slide_image_5\" class=\"left displayAfterResize vne_lazy_image lazyloaded\" src=\"https://i-vnexpress.vnecdn.net/2019/09/05/lu-ha-tinh-6-1567698809_1567702456_680x0.jpg\" alt=\"Lụt chạm n&oacute;c nh&agrave;\" data-reference-id=\"26760951\" data-original=\"https://i-vnexpress.vnecdn.net/2019/09/05/lu-ha-tinh-6-1567698809_1567702456_680x0.jpg\" data-component-caption=\"&amp;lt;p&amp;gt;\r\n	Nhiều gia đ&igrave;nh kh&ocirc;ng kịp đưa vật nu&ocirc;i, gia s&uacute;c đi tr&aacute;nh lũ đ&agrave;nh phải để tr&ecirc;n thuyền.&amp;lt;/p&amp;gt;\" /></div>\r\n<div class=\"desc_cation\">\r\n<p>Nhiều gia đ&igrave;nh kh&ocirc;ng kịp đưa vật nu&ocirc;i, gia s&uacute;c đi tr&aacute;nh lũ đ&agrave;nh phải để tr&ecirc;n thuyền.</p>\r\n</div>\r\n</div>\r\n<div class=\"item_slide_show clearfix\">\r\n<div class=\"block_thumb_slide_show\"><img id=\"vne_slide_image_6\" class=\"left displayAfterResize vne_lazy_image lazyloaded\" src=\"https://i-vnexpress.vnecdn.net/2019/09/05/lu-ha-tinh-11-1567698824_680x0.jpg\" alt=\"Lụt chạm n&oacute;c nh&agrave;\" data-reference-id=\"26760952\" data-original=\"https://i-vnexpress.vnecdn.net/2019/09/05/lu-ha-tinh-11-1567698824_680x0.jpg\" data-component-caption=\"&amp;lt;p&amp;gt;\r\n	Mọi đồ đạc, vật dụng, m&aacute;y m&oacute;c thiết yếu đ&atilde; được sơ t&aacute;n l&ecirc;n n&oacute;c nh&agrave; từ tối 3/9.&amp;lt;/p&amp;gt;\" /></div>\r\n<div class=\"desc_cation\">\r\n<p>Mọi đồ đạc, vật dụng, m&aacute;y m&oacute;c thiết yếu đ&atilde; được sơ t&aacute;n l&ecirc;n n&oacute;c nh&agrave; từ tối 3/9.</p>\r\n</div>\r\n</div>\r\n<div class=\"item_slide_show clearfix\">\r\n<div class=\"block_thumb_slide_show\"><img id=\"vne_slide_image_7\" class=\"left displayAfterResize vne_lazy_image lazyloaded\" src=\"https://i-vnexpress.vnecdn.net/2019/09/05/lu-ha-tinh-13_680x0.jpg\" alt=\"Lụt chạm n&oacute;c nh&agrave;\" data-reference-id=\"26760953\" data-original=\"https://i-vnexpress.vnecdn.net/2019/09/05/lu-ha-tinh-13_680x0.jpg\" data-component-caption=\"&amp;lt;p&amp;gt;\r\n	Mẹ con chị Nguyễn Thị Lương kh&ocirc;ng kịp di chuyển l&ecirc;n v&ugrave;ng cao do nước d&acirc;ng qu&aacute; nhanh, họ phải ở lại trong căn nh&agrave; cấp bốn nước đ&atilde; ngập gần tới tận n&oacute;c.&amp;lt;/p&amp;gt;\r\n&amp;lt;p&amp;gt;\r\n	&amp;quot;Tối h&ocirc;m qua tới giờ cứ ngủ thấp thỏm, kh&ocirc;ng tr&ograve;n giấc v&igrave; sợ&amp;quot;, chị Lương n&oacute;i.&amp;lt;/p&amp;gt;\" /></div>\r\n<div class=\"desc_cation\">\r\n<p>Mẹ con chị Nguyễn Thị Lương kh&ocirc;ng kịp di chuyển l&ecirc;n v&ugrave;ng cao do nước d&acirc;ng qu&aacute; nhanh, họ phải ở lại trong căn nh&agrave; cấp bốn nước đ&atilde; ngập gần tới tận n&oacute;c.</p>\r\n<p>\"Tối h&ocirc;m qua tới giờ cứ ngủ thấp thỏm, kh&ocirc;ng tr&ograve;n giấc v&igrave; sợ\", chị Lương n&oacute;i.</p>\r\n</div>\r\n</div>', 'post_1.jpg', 1, NULL, 1, 2, 1, NULL, 1567744099, 1567839700, 0, 'lut-nha,mua-uot');
+
+-- ----------------------------
+-- Table structure for auth_assignment
+-- ----------------------------
+DROP TABLE IF EXISTS `auth_assignment`;
+CREATE TABLE `auth_assignment`  (
+  `item_name` varchar(64) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `user_id` varchar(64) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `created_at` int(11) NULL DEFAULT NULL,
+  PRIMARY KEY (`item_name`, `user_id`) USING BTREE,
+  INDEX `idx-auth_assignment-user_id`(`user_id`) USING BTREE,
+  CONSTRAINT `auth_assignment_ibfk_1` FOREIGN KEY (`item_name`) REFERENCES `auth_item` (`name`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of auth_assignment
+-- ----------------------------
+INSERT INTO `auth_assignment` VALUES ('Admin', '1', 1567591654);
+
+-- ----------------------------
+-- Table structure for auth_item
+-- ----------------------------
+DROP TABLE IF EXISTS `auth_item`;
+CREATE TABLE `auth_item`  (
+  `name` varchar(64) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `type` smallint(6) NOT NULL,
+  `description` text CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL,
+  `rule_name` varchar(64) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL,
+  `data` blob NULL,
+  `created_at` int(11) NULL DEFAULT NULL,
+  `updated_at` int(11) NULL DEFAULT NULL,
+  PRIMARY KEY (`name`) USING BTREE,
+  INDEX `rule_name`(`rule_name`) USING BTREE,
+  INDEX `idx-auth_item-type`(`type`) USING BTREE,
+  CONSTRAINT `auth_item_ibfk_1` FOREIGN KEY (`rule_name`) REFERENCES `auth_rule` (`name`) ON DELETE SET NULL ON UPDATE CASCADE
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of auth_item
+-- ----------------------------
+INSERT INTO `auth_item` VALUES ('/*', 2, NULL, NULL, NULL, 1567591584, 1567591584);
+INSERT INTO `auth_item` VALUES ('/articles/*', 2, NULL, NULL, NULL, 1567756808, 1567756808);
+INSERT INTO `auth_item` VALUES ('/articles/create', 2, NULL, NULL, NULL, 1567756808, 1567756808);
+INSERT INTO `auth_item` VALUES ('/articles/index', 2, NULL, NULL, NULL, 1567756808, 1567756808);
+INSERT INTO `auth_item` VALUES ('/articles/is-delete', 2, NULL, NULL, NULL, 1567756808, 1567756808);
+INSERT INTO `auth_item` VALUES ('/articles/list-articles-cat', 2, NULL, NULL, NULL, 1567756801, 1567756801);
+INSERT INTO `auth_item` VALUES ('/articles/update', 2, NULL, NULL, NULL, 1567756808, 1567756808);
+INSERT INTO `auth_item` VALUES ('/articles/view', 2, NULL, NULL, NULL, 1567756808, 1567756808);
+INSERT INTO `auth_item` VALUES ('/banner/*', 2, NULL, NULL, NULL, 1567931696, 1567931696);
+INSERT INTO `auth_item` VALUES ('/banner/active', 2, NULL, NULL, NULL, 1567931696, 1567931696);
+INSERT INTO `auth_item` VALUES ('/banner/create', 2, NULL, NULL, NULL, 1567931696, 1567931696);
+INSERT INTO `auth_item` VALUES ('/banner/delete', 2, NULL, NULL, NULL, 1567931696, 1567931696);
+INSERT INTO `auth_item` VALUES ('/banner/disable', 2, NULL, NULL, NULL, 1567931696, 1567931696);
+INSERT INTO `auth_item` VALUES ('/banner/index', 2, NULL, NULL, NULL, 1567931695, 1567931695);
+INSERT INTO `auth_item` VALUES ('/banner/update', 2, NULL, NULL, NULL, 1567931696, 1567931696);
+INSERT INTO `auth_item` VALUES ('/banner/view', 2, NULL, NULL, NULL, 1567931695, 1567931695);
+INSERT INTO `auth_item` VALUES ('/cat-articles/*', 2, NULL, NULL, NULL, 1567756801, 1567756801);
+INSERT INTO `auth_item` VALUES ('/cat-articles/create', 2, NULL, NULL, NULL, 1567756801, 1567756801);
+INSERT INTO `auth_item` VALUES ('/cat-articles/delete', 2, NULL, NULL, NULL, 1567756801, 1567756801);
+INSERT INTO `auth_item` VALUES ('/cat-articles/index', 2, NULL, NULL, NULL, 1567756801, 1567756801);
+INSERT INTO `auth_item` VALUES ('/cat-articles/update', 2, NULL, NULL, NULL, 1567756801, 1567756801);
+INSERT INTO `auth_item` VALUES ('/cat-articles/view', 2, NULL, NULL, NULL, 1567756801, 1567756801);
+INSERT INTO `auth_item` VALUES ('/cat-insurrances/*', 2, NULL, NULL, NULL, 1567931696, 1567931696);
+INSERT INTO `auth_item` VALUES ('/cat-insurrances/create', 2, NULL, NULL, NULL, 1567931696, 1567931696);
+INSERT INTO `auth_item` VALUES ('/cat-insurrances/delete', 2, NULL, NULL, NULL, 1567931696, 1567931696);
+INSERT INTO `auth_item` VALUES ('/cat-insurrances/index', 2, NULL, NULL, NULL, 1567931696, 1567931696);
+INSERT INTO `auth_item` VALUES ('/cat-insurrances/update', 2, NULL, NULL, NULL, 1567931696, 1567931696);
+INSERT INTO `auth_item` VALUES ('/cat-insurrances/view', 2, NULL, NULL, NULL, 1567931696, 1567931696);
+INSERT INTO `auth_item` VALUES ('/debug/*', 2, NULL, NULL, NULL, 1567591584, 1567591584);
+INSERT INTO `auth_item` VALUES ('/debug/default/*', 2, NULL, NULL, NULL, 1567591584, 1567591584);
+INSERT INTO `auth_item` VALUES ('/debug/default/db-explain', 2, NULL, NULL, NULL, 1567591584, 1567591584);
+INSERT INTO `auth_item` VALUES ('/debug/default/download-mail', 2, NULL, NULL, NULL, 1567591584, 1567591584);
+INSERT INTO `auth_item` VALUES ('/debug/default/index', 2, NULL, NULL, NULL, 1567591584, 1567591584);
+INSERT INTO `auth_item` VALUES ('/debug/default/toolbar', 2, NULL, NULL, NULL, 1567647895, 1567647895);
+INSERT INTO `auth_item` VALUES ('/debug/default/view', 2, NULL, NULL, NULL, 1567591584, 1567591584);
+INSERT INTO `auth_item` VALUES ('/debug/user/*', 2, NULL, NULL, NULL, 1567591584, 1567591584);
+INSERT INTO `auth_item` VALUES ('/debug/user/reset-identity', 2, NULL, NULL, NULL, 1567591584, 1567591584);
+INSERT INTO `auth_item` VALUES ('/debug/user/set-identity', 2, NULL, NULL, NULL, 1567591584, 1567591584);
+INSERT INTO `auth_item` VALUES ('/gii/*', 2, NULL, NULL, NULL, 1567591584, 1567591584);
+INSERT INTO `auth_item` VALUES ('/gii/default/*', 2, NULL, NULL, NULL, 1567591584, 1567591584);
+INSERT INTO `auth_item` VALUES ('/gii/default/action', 2, NULL, NULL, NULL, 1567591584, 1567591584);
+INSERT INTO `auth_item` VALUES ('/gii/default/diff', 2, NULL, NULL, NULL, 1567591584, 1567591584);
+INSERT INTO `auth_item` VALUES ('/gii/default/index', 2, NULL, NULL, NULL, 1567591584, 1567591584);
+INSERT INTO `auth_item` VALUES ('/gii/default/preview', 2, NULL, NULL, NULL, 1567591584, 1567591584);
+INSERT INTO `auth_item` VALUES ('/gii/default/view', 2, NULL, NULL, NULL, 1567591584, 1567591584);
+INSERT INTO `auth_item` VALUES ('/info-profile/*', 2, NULL, NULL, NULL, 1567591584, 1567591584);
+INSERT INTO `auth_item` VALUES ('/info-profile/update', 2, NULL, NULL, NULL, 1567591584, 1567591584);
+INSERT INTO `auth_item` VALUES ('/log-system/*', 2, NULL, NULL, NULL, 1568013829, 1568013829);
+INSERT INTO `auth_item` VALUES ('/log-system/index', 2, NULL, NULL, NULL, 1568013829, 1568013829);
+INSERT INTO `auth_item` VALUES ('/mail/*', 2, NULL, NULL, NULL, 1567931697, 1567931697);
+INSERT INTO `auth_item` VALUES ('/mail/khach-hang', 2, NULL, NULL, NULL, 1568000168, 1568000168);
+INSERT INTO `auth_item` VALUES ('/mail/mail-boi-hoan', 2, NULL, NULL, NULL, 1567931697, 1567931697);
+INSERT INTO `auth_item` VALUES ('/mail/mail-lien-he', 2, NULL, NULL, NULL, 1567931697, 1567931697);
+INSERT INTO `auth_item` VALUES ('/mail/mail-nhan-tin-tuc', 2, NULL, NULL, NULL, 1567931697, 1567931697);
+INSERT INTO `auth_item` VALUES ('/mail/thanh-vien', 2, NULL, NULL, NULL, 1568000168, 1568000168);
+INSERT INTO `auth_item` VALUES ('/parter/*', 2, NULL, NULL, NULL, 1567931697, 1567931697);
+INSERT INTO `auth_item` VALUES ('/parter/create', 2, NULL, NULL, NULL, 1567931697, 1567931697);
+INSERT INTO `auth_item` VALUES ('/parter/delete', 2, NULL, NULL, NULL, 1567931697, 1567931697);
+INSERT INTO `auth_item` VALUES ('/parter/index', 2, NULL, NULL, NULL, 1567931697, 1567931697);
+INSERT INTO `auth_item` VALUES ('/parter/update', 2, NULL, NULL, NULL, 1567931697, 1567931697);
+INSERT INTO `auth_item` VALUES ('/parter/view', 2, NULL, NULL, NULL, 1567931697, 1567931697);
+INSERT INTO `auth_item` VALUES ('/products/*', 2, NULL, NULL, NULL, 1568086497, 1568086497);
+INSERT INTO `auth_item` VALUES ('/products/create', 2, NULL, NULL, NULL, 1568086497, 1568086497);
+INSERT INTO `auth_item` VALUES ('/products/delete', 2, NULL, NULL, NULL, 1568086497, 1568086497);
+INSERT INTO `auth_item` VALUES ('/products/index', 2, NULL, NULL, NULL, 1568086496, 1568086496);
+INSERT INTO `auth_item` VALUES ('/products/update', 2, NULL, NULL, NULL, 1568086497, 1568086497);
+INSERT INTO `auth_item` VALUES ('/products/view', 2, NULL, NULL, NULL, 1568086497, 1568086497);
+INSERT INTO `auth_item` VALUES ('/rbac/*', 2, NULL, NULL, NULL, 1567591584, 1567591584);
+INSERT INTO `auth_item` VALUES ('/rbac/assignment/*', 2, NULL, NULL, NULL, 1567591577, 1567591577);
+INSERT INTO `auth_item` VALUES ('/rbac/assignment/assign', 2, NULL, NULL, NULL, 1567591577, 1567591577);
+INSERT INTO `auth_item` VALUES ('/rbac/assignment/index', 2, NULL, NULL, NULL, 1567591583, 1567591583);
+INSERT INTO `auth_item` VALUES ('/rbac/assignment/remove', 2, NULL, NULL, NULL, 1567591577, 1567591577);
+INSERT INTO `auth_item` VALUES ('/rbac/assignment/view', 2, NULL, NULL, NULL, 1567591577, 1567591577);
+INSERT INTO `auth_item` VALUES ('/rbac/permission/*', 2, NULL, NULL, NULL, 1567591583, 1567591583);
+INSERT INTO `auth_item` VALUES ('/rbac/permission/assign', 2, NULL, NULL, NULL, 1567591583, 1567591583);
+INSERT INTO `auth_item` VALUES ('/rbac/permission/create', 2, NULL, NULL, NULL, 1567591577, 1567591577);
+INSERT INTO `auth_item` VALUES ('/rbac/permission/delete', 2, NULL, NULL, NULL, 1567591583, 1567591583);
+INSERT INTO `auth_item` VALUES ('/rbac/permission/index', 2, NULL, NULL, NULL, 1567591577, 1567591577);
+INSERT INTO `auth_item` VALUES ('/rbac/permission/remove', 2, NULL, NULL, NULL, 1567591583, 1567591583);
+INSERT INTO `auth_item` VALUES ('/rbac/permission/update', 2, NULL, NULL, NULL, 1567591583, 1567591583);
+INSERT INTO `auth_item` VALUES ('/rbac/permission/view', 2, NULL, NULL, NULL, 1567591577, 1567591577);
+INSERT INTO `auth_item` VALUES ('/rbac/role/*', 2, NULL, NULL, NULL, 1567591583, 1567591583);
+INSERT INTO `auth_item` VALUES ('/rbac/role/assign', 2, NULL, NULL, NULL, 1567591583, 1567591583);
+INSERT INTO `auth_item` VALUES ('/rbac/role/create', 2, NULL, NULL, NULL, 1567591583, 1567591583);
+INSERT INTO `auth_item` VALUES ('/rbac/role/delete', 2, NULL, NULL, NULL, 1567591583, 1567591583);
+INSERT INTO `auth_item` VALUES ('/rbac/role/index', 2, NULL, NULL, NULL, 1567591583, 1567591583);
+INSERT INTO `auth_item` VALUES ('/rbac/role/remove', 2, NULL, NULL, NULL, 1567591583, 1567591583);
+INSERT INTO `auth_item` VALUES ('/rbac/role/update', 2, NULL, NULL, NULL, 1567591583, 1567591583);
+INSERT INTO `auth_item` VALUES ('/rbac/role/view', 2, NULL, NULL, NULL, 1567591583, 1567591583);
+INSERT INTO `auth_item` VALUES ('/rbac/route/*', 2, NULL, NULL, NULL, 1567591583, 1567591583);
+INSERT INTO `auth_item` VALUES ('/rbac/route/assign', 2, NULL, NULL, NULL, 1567591583, 1567591583);
+INSERT INTO `auth_item` VALUES ('/rbac/route/index', 2, NULL, NULL, NULL, 1567591583, 1567591583);
+INSERT INTO `auth_item` VALUES ('/rbac/route/refresh', 2, NULL, NULL, NULL, 1567591583, 1567591583);
+INSERT INTO `auth_item` VALUES ('/rbac/route/remove', 2, NULL, NULL, NULL, 1567591583, 1567591583);
+INSERT INTO `auth_item` VALUES ('/rbac/rule/*', 2, NULL, NULL, NULL, 1567591584, 1567591584);
+INSERT INTO `auth_item` VALUES ('/rbac/rule/create', 2, NULL, NULL, NULL, 1567591583, 1567591583);
+INSERT INTO `auth_item` VALUES ('/rbac/rule/delete', 2, NULL, NULL, NULL, 1567591584, 1567591584);
+INSERT INTO `auth_item` VALUES ('/rbac/rule/index', 2, NULL, NULL, NULL, 1567591583, 1567591583);
+INSERT INTO `auth_item` VALUES ('/rbac/rule/update', 2, NULL, NULL, NULL, 1567591584, 1567591584);
+INSERT INTO `auth_item` VALUES ('/rbac/rule/view', 2, NULL, NULL, NULL, 1567591583, 1567591583);
+INSERT INTO `auth_item` VALUES ('/site/*', 2, NULL, NULL, NULL, 1567591584, 1567591584);
+INSERT INTO `auth_item` VALUES ('/site/change-password', 2, NULL, NULL, NULL, 1568000168, 1568000168);
+INSERT INTO `auth_item` VALUES ('/site/changepassword', 2, NULL, NULL, NULL, 1567756808, 1567756808);
+INSERT INTO `auth_item` VALUES ('/site/check', 2, NULL, NULL, NULL, 1568013829, 1568013829);
+INSERT INTO `auth_item` VALUES ('/site/error', 2, NULL, NULL, NULL, 1567591584, 1567591584);
+INSERT INTO `auth_item` VALUES ('/site/index', 2, NULL, NULL, NULL, 1567591584, 1567591584);
+INSERT INTO `auth_item` VALUES ('/site/login', 2, NULL, NULL, NULL, 1567591584, 1567591584);
+INSERT INTO `auth_item` VALUES ('/site/logout', 2, NULL, NULL, NULL, 1567591584, 1567591584);
+INSERT INTO `auth_item` VALUES ('/site/request-password-reset', 2, NULL, NULL, NULL, 1567756808, 1567756808);
+INSERT INTO `auth_item` VALUES ('/site/resend-verification-email', 2, NULL, NULL, NULL, 1567756801, 1567756801);
+INSERT INTO `auth_item` VALUES ('/site/reset-password', 2, NULL, NULL, NULL, 1567756808, 1567756808);
+INSERT INTO `auth_item` VALUES ('/site/signup', 2, NULL, NULL, NULL, 1567591584, 1567591584);
+INSERT INTO `auth_item` VALUES ('/site/verify-email', 2, NULL, NULL, NULL, 1567756808, 1567756808);
+INSERT INTO `auth_item` VALUES ('/user/*', 2, NULL, NULL, NULL, 1567931697, 1567931697);
+INSERT INTO `auth_item` VALUES ('/user/create', 2, NULL, NULL, NULL, 1567756808, 1567756808);
+INSERT INTO `auth_item` VALUES ('/user/delete', 2, NULL, NULL, NULL, 1567931697, 1567931697);
+INSERT INTO `auth_item` VALUES ('/user/index', 2, NULL, NULL, NULL, 1567931697, 1567931697);
+INSERT INTO `auth_item` VALUES ('/user/update', 2, NULL, NULL, NULL, 1567756808, 1567756808);
+INSERT INTO `auth_item` VALUES ('/user/view', 2, NULL, NULL, NULL, 1567931697, 1567931697);
+INSERT INTO `auth_item` VALUES ('Admin', 2, NULL, NULL, NULL, 1567591633, 1567591633);
+
+-- ----------------------------
+-- Table structure for auth_item_child
+-- ----------------------------
+DROP TABLE IF EXISTS `auth_item_child`;
+CREATE TABLE `auth_item_child`  (
+  `parent` varchar(64) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `child` varchar(64) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`parent`, `child`) USING BTREE,
+  INDEX `child`(`child`) USING BTREE,
+  CONSTRAINT `auth_item_child_ibfk_1` FOREIGN KEY (`parent`) REFERENCES `auth_item` (`name`) ON DELETE CASCADE ON UPDATE CASCADE,
+  CONSTRAINT `auth_item_child_ibfk_2` FOREIGN KEY (`child`) REFERENCES `auth_item` (`name`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of auth_item_child
+-- ----------------------------
+INSERT INTO `auth_item_child` VALUES ('Admin', '/*');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/articles/*');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/articles/create');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/articles/index');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/articles/is-delete');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/articles/list-articles-cat');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/articles/update');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/articles/view');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/banner/*');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/banner/active');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/banner/create');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/banner/delete');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/banner/disable');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/banner/index');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/banner/update');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/banner/view');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/cat-articles/*');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/cat-articles/create');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/cat-articles/delete');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/cat-articles/index');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/cat-articles/update');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/cat-articles/view');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/cat-insurrances/*');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/cat-insurrances/create');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/cat-insurrances/delete');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/cat-insurrances/index');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/cat-insurrances/update');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/cat-insurrances/view');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/debug/*');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/debug/default/*');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/debug/default/db-explain');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/debug/default/download-mail');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/debug/default/index');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/debug/default/toolbar');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/debug/default/view');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/debug/user/*');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/debug/user/reset-identity');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/debug/user/set-identity');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/gii/*');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/gii/default/*');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/gii/default/action');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/gii/default/diff');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/gii/default/index');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/gii/default/preview');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/gii/default/view');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/info-profile/*');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/info-profile/update');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/log-system/*');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/log-system/index');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/mail/*');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/mail/khach-hang');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/mail/mail-boi-hoan');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/mail/mail-lien-he');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/mail/mail-nhan-tin-tuc');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/mail/thanh-vien');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/parter/*');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/parter/create');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/parter/delete');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/parter/index');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/parter/update');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/parter/view');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/products/*');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/products/create');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/products/delete');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/products/index');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/products/update');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/products/view');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/rbac/*');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/rbac/assignment/*');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/rbac/assignment/assign');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/rbac/assignment/index');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/rbac/assignment/remove');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/rbac/assignment/view');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/rbac/permission/*');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/rbac/permission/assign');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/rbac/permission/create');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/rbac/permission/delete');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/rbac/permission/index');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/rbac/permission/remove');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/rbac/permission/update');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/rbac/permission/view');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/rbac/role/*');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/rbac/role/assign');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/rbac/role/create');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/rbac/role/delete');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/rbac/role/index');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/rbac/role/remove');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/rbac/role/update');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/rbac/role/view');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/rbac/route/*');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/rbac/route/assign');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/rbac/route/index');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/rbac/route/refresh');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/rbac/route/remove');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/rbac/rule/*');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/rbac/rule/create');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/rbac/rule/delete');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/rbac/rule/index');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/rbac/rule/update');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/rbac/rule/view');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/site/*');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/site/change-password');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/site/changepassword');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/site/check');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/site/error');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/site/index');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/site/login');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/site/logout');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/site/request-password-reset');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/site/resend-verification-email');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/site/reset-password');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/site/signup');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/site/verify-email');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/user/*');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/user/create');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/user/delete');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/user/index');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/user/update');
+INSERT INTO `auth_item_child` VALUES ('Admin', '/user/view');
+
+-- ----------------------------
+-- Table structure for auth_rule
+-- ----------------------------
+DROP TABLE IF EXISTS `auth_rule`;
+CREATE TABLE `auth_rule`  (
+  `name` varchar(64) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `data` blob NULL,
+  `created_at` int(11) NULL DEFAULT NULL,
+  `updated_at` int(11) NULL DEFAULT NULL,
+  PRIMARY KEY (`name`) USING BTREE
+) ENGINE = InnoDB CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Table structure for banner
+-- ----------------------------
+DROP TABLE IF EXISTS `banner`;
+CREATE TABLE `banner`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `slug` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `image` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `status` int(11) NOT NULL,
+  `created_at` int(11) NOT NULL,
+  `updated_at` int(11) NULL DEFAULT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 3 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of banner
+-- ----------------------------
+INSERT INTO `banner` VALUES (2, 'lut-cham-noc-nha', '67118947_717216212034348_4001275598348484608_n.png', 0, 1567838440, 1567838799);
+
+-- ----------------------------
+-- Table structure for cat_articles
+-- ----------------------------
+DROP TABLE IF EXISTS `cat_articles`;
+CREATE TABLE `cat_articles`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL DEFAULT NULL,
+  `parent_id` int(11) NULL DEFAULT NULL,
+  `level` int(11) NULL DEFAULT NULL,
+  `code` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL DEFAULT NULL,
+  `status` int(11) NOT NULL,
+  PRIMARY KEY (`id`) USING BTREE,
+  UNIQUE INDEX `catName`(`name`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 3 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of cat_articles
+-- ----------------------------
+INSERT INTO `cat_articles` VALUES (1, 'Frontend', NULL, 1, 'Fe', 1);
+INSERT INTO `cat_articles` VALUES (2, 'Backend', NULL, 1, 'Be', 0);
+
+-- ----------------------------
+-- Table structure for cat_insurrances
+-- ----------------------------
+DROP TABLE IF EXISTS `cat_insurrances`;
+CREATE TABLE `cat_insurrances`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `code` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `desc` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL DEFAULT NULL,
+  `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `status` int(11) NOT NULL,
+  `created_at` int(11) NOT NULL,
+  `updated_at` int(11) NULL DEFAULT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 3 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of cat_insurrances
+-- ----------------------------
+INSERT INTO `cat_insurrances` VALUES (1, 'VienPhi', 'Loại hình viện phí ', 'Viện Phí', 1, 1568025151, NULL);
+INSERT INTO `cat_insurrances` VALUES (2, 'TaiNan', 'Bảo hiểm tai nạn', 'Tai Nạn', 1, 1568025760, NULL);
+
+-- ----------------------------
+-- Table structure for cat_insurrances_question
+-- ----------------------------
+DROP TABLE IF EXISTS `cat_insurrances_question`;
+CREATE TABLE `cat_insurrances_question`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `question` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `answer` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `cat_insurrances_id` int(11) NOT NULL,
+  `created_at` int(11) NOT NULL,
+  `updated_at` int(11) NULL DEFAULT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 9 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of cat_insurrances_question
+-- ----------------------------
+INSERT INTO `cat_insurrances_question` VALUES (6, 'Câu hỏi số 1', 'Giải thích\r\n', 1, 1568098386, NULL);
+INSERT INTO `cat_insurrances_question` VALUES (7, 'Câu hỏi số 1', 'Giải thích\r\n', 1, 1568098548, NULL);
+INSERT INTO `cat_insurrances_question` VALUES (8, 'Câu hỏi số 1', 'Giải thích\r\n', 1, 1568098873, NULL);
+
+-- ----------------------------
+-- Table structure for info_profile
+-- ----------------------------
+DROP TABLE IF EXISTS `info_profile`;
+CREATE TABLE `info_profile`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `full_name` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL,
+  `birth_day` int(11) NULL DEFAULT NULL,
+  `cell_phone` int(10) NULL DEFAULT NULL,
+  `city` int(11) NULL DEFAULT NULL,
+  `district` int(11) NULL DEFAULT NULL,
+  `ward` int(11) NULL DEFAULT NULL,
+  `avatar` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL,
+  `gender` int(11) NULL DEFAULT NULL,
+  `user_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 22 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of info_profile
+-- ----------------------------
+INSERT INTO `info_profile` VALUES (1, 'Ngô Văn Điệp', 832802400, 987001396, 0, 0, 0, '', 1, 1);
+INSERT INTO `info_profile` VALUES (14, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 10);
+INSERT INTO `info_profile` VALUES (15, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 11);
+INSERT INTO `info_profile` VALUES (16, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 12);
+INSERT INTO `info_profile` VALUES (17, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 13);
+INSERT INTO `info_profile` VALUES (18, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 14);
+INSERT INTO `info_profile` VALUES (19, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 15);
+INSERT INTO `info_profile` VALUES (20, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 20);
+INSERT INTO `info_profile` VALUES (21, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 21);
+
+-- ----------------------------
+-- Table structure for info_profile_fe
+-- ----------------------------
+DROP TABLE IF EXISTS `info_profile_fe`;
+CREATE TABLE `info_profile_fe`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `full_name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL DEFAULT NULL,
+  `birth_day` int(11) NULL DEFAULT NULL,
+  `cell_phone` int(10) NULL DEFAULT NULL,
+  `city` int(11) NULL DEFAULT NULL,
+  `district` int(11) NULL DEFAULT NULL,
+  `ward` int(11) NULL DEFAULT NULL,
+  `avatar` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL,
+  `gender` int(11) NULL DEFAULT NULL,
+  `user_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Table structure for log_system
+-- ----------------------------
+DROP TABLE IF EXISTS `log_system`;
+CREATE TABLE `log_system`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) NOT NULL,
+  `status` int(11) NOT NULL,
+  `created_at` int(11) NOT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 6 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of log_system
+-- ----------------------------
+INSERT INTO `log_system` VALUES (4, 20, 0, 1568004884);
+INSERT INTO `log_system` VALUES (5, 21, 0, 1568011452);
+
+-- ----------------------------
+-- Table structure for migration
+-- ----------------------------
+DROP TABLE IF EXISTS `migration`;
+CREATE TABLE `migration`  (
+  `version` varchar(180) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `apply_time` int(11) NULL DEFAULT NULL,
+  PRIMARY KEY (`version`) USING BTREE
+) ENGINE = InnoDB CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of migration
+-- ----------------------------
+INSERT INTO `migration` VALUES ('m000000_000000_base', 1567562899);
+INSERT INTO `migration` VALUES ('m130524_201442_init', 1567562901);
+INSERT INTO `migration` VALUES ('m140506_102106_rbac_init', 1567585375);
+INSERT INTO `migration` VALUES ('m170907_052038_rbac_add_index_on_auth_assignment_user_id', 1567585375);
+INSERT INTO `migration` VALUES ('m180523_151638_rbac_updates_indexes_without_prefix', 1567585376);
+INSERT INTO `migration` VALUES ('m190124_110200_add_verification_token_column_to_user_table', 1567562901);
+
+-- ----------------------------
+-- Table structure for parter
+-- ----------------------------
+DROP TABLE IF EXISTS `parter`;
+CREATE TABLE `parter`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `code` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `avatar` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `created_at` int(11) NOT NULL,
+  `updated_at` int(11) NOT NULL,
+  `status` int(11) NOT NULL,
+  PRIMARY KEY (`id`) USING BTREE,
+  INDEX `name`(`name`) USING BTREE,
+  INDEX `code`(`code`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 4 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of parter
+-- ----------------------------
+INSERT INTO `parter` VALUES (1, 'VietTinBank', 'Việt Tin Bank', '69761027_376065796395174_6665917504000360448_n.jpg', 1567825282, 1567829154, 0);
+INSERT INTO `parter` VALUES (3, 'VietComBank', 'Vietcombank', '5-diem-an-tuong-vuot-troi-cua-xe-cao-cap-vinfast-lux.jpg', 1567828171, 0, 1);
+
+-- ----------------------------
+-- Table structure for products
+-- ----------------------------
+DROP TABLE IF EXISTS `products`;
+CREATE TABLE `products`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `full_name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `price` float(10, 2) NOT NULL,
+  `description` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `slug` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `content` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `parter_id` int(11) NOT NULL,
+  `avatar` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL DEFAULT NULL,
+  `cat_insurrances_id` int(11) NOT NULL,
+  `rank` int(11) NULL DEFAULT NULL,
+  `periodic` int(11) NOT NULL,
+  `created_at` int(11) NOT NULL,
+  `updated_at` int(11) NULL DEFAULT NULL,
+  `status` int(11) NOT NULL,
+  `condition` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL,
+  `charge` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL,
+  `requirement` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL,
+  `review` text CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NULL,
+  PRIMARY KEY (`id`) USING BTREE,
+  INDEX `catName`(`cat_insurrances_id`) USING BTREE,
+  INDEX `fullName`(`full_name`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 3 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of products
+-- ----------------------------
+INSERT INTO `products` VALUES (1, 'bảo hiểm sản phầm số 1', 1000000.00, 'Mô tả ngắn', 'bao-hiem-san-pham-so-1', '<div>Trường hợp một trong hai b&ecirc;n đề nghị huỷ bỏ Hợp đồng bảo hiểm, b&ecirc;n y&ecirc;u cầu huỷ bỏ phải th&ocirc;ng b&aacute;o bằng văn bản cho b&ecirc;n kia biết trước 30 ng&agrave;y kể từ ng&agrave;y định huỷ bỏ.</div>\r\n<div>Nếu b&ecirc;n mua bảo hiểm y&ecirc;u cầu hủy bỏ Hợp đồng bảo hiểm, Bảo hiểm PVI sẽ ho&agrave;n trả 80% ph&iacute; bảo hiểm của thời gian c&ograve;n lại. Bảo hiểm PVI chỉ ho&agrave;n trả ph&iacute; bảo hiểm với điều kiện trong thời gian hiệu lực của Hợp đồng bảo hiểm chưa c&oacute; khiếu nại y&ecirc;u cầu trả tiền bảo hiểm n&agrave;o xảy ra (trừ trường hợp khiếu nại bị từ chối trả tiền bảo hiểm).</div>\r\n<div>Nếu Bảo hiểm PVI y&ecirc;u cầu hủy bỏ bảo hiểm, Bảo hiểm PVI sẽ ho&agrave;n trả 100% ph&iacute; bảo hiểm của thời gian c&ograve;n lại.</div>', 1, 'Not_a_bug_a_feature_men_s_tshirt5_1024x1024.webp', 2, 2, 0, 1568081261, 1568089118, 1, '<div>Trường hợp một trong hai b&ecirc;n đề nghị huỷ bỏ Hợp đồng bảo hiểm, b&ecirc;n y&ecirc;u cầu huỷ bỏ phải th&ocirc;ng b&aacute;o bằng văn bản cho b&ecirc;n kia biết trước 30 ng&agrave;y kể từ ng&agrave;y định huỷ bỏ.</div>\r\n<div>Nếu b&ecirc;n mua bảo hiểm y&ecirc;u cầu hủy bỏ Hợp đồng bảo hiểm, Bảo hiểm PVI sẽ ho&agrave;n trả 80% ph&iacute; bảo hiểm của thời gian c&ograve;n lại. Bảo hiểm PVI chỉ ho&agrave;n trả ph&iacute; bảo hiểm với điều kiện trong thời gian hiệu lực của Hợp đồng bảo hiểm chưa c&oacute; khiếu nại y&ecirc;u cầu trả tiền bảo hiểm n&agrave;o xảy ra (trừ trường hợp khiếu nại bị từ chối trả tiền bảo hiểm).</div>\r\n<div>Nếu Bảo hiểm PVI y&ecirc;u cầu hủy bỏ bảo hiểm, Bảo hiểm PVI sẽ ho&agrave;n trả 100% ph&iacute; bảo hiểm của thời gian c&ograve;n lại.</div>', '<div>Trường hợp một trong hai b&ecirc;n đề nghị huỷ bỏ Hợp đồng bảo hiểm, b&ecirc;n y&ecirc;u cầu huỷ bỏ phải th&ocirc;ng b&aacute;o bằng văn bản cho b&ecirc;n kia biết trước 30 ng&agrave;y kể từ ng&agrave;y định huỷ bỏ.</div>\r\n<div>Nếu b&ecirc;n mua bảo hiểm y&ecirc;u cầu hủy bỏ Hợp đồng bảo hiểm, Bảo hiểm PVI sẽ ho&agrave;n trả 80% ph&iacute; bảo hiểm của thời gian c&ograve;n lại. Bảo hiểm PVI chỉ ho&agrave;n trả ph&iacute; bảo hiểm với điều kiện trong thời gian hiệu lực của Hợp đồng bảo hiểm chưa c&oacute; khiếu nại y&ecirc;u cầu trả tiền bảo hiểm n&agrave;o xảy ra (trừ trường hợp khiếu nại bị từ chối trả tiền bảo hiểm).</div>\r\n<div>Nếu Bảo hiểm PVI y&ecirc;u cầu hủy bỏ bảo hiểm, Bảo hiểm PVI sẽ ho&agrave;n trả 100% ph&iacute; bảo hiểm của thời gian c&ograve;n lại.</div>', '<div>Trường hợp một trong hai b&ecirc;n đề nghị huỷ bỏ Hợp đồng bảo hiểm, b&ecirc;n y&ecirc;u cầu huỷ bỏ phải th&ocirc;ng b&aacute;o bằng văn bản cho b&ecirc;n kia biết trước 30 ng&agrave;y kể từ ng&agrave;y định huỷ bỏ.</div>\r\n<div>Nếu b&ecirc;n mua bảo hiểm y&ecirc;u cầu hủy bỏ Hợp đồng bảo hiểm, Bảo hiểm PVI sẽ ho&agrave;n trả 80% ph&iacute; bảo hiểm của thời gian c&ograve;n lại. Bảo hiểm PVI chỉ ho&agrave;n trả ph&iacute; bảo hiểm với điều kiện trong thời gian hiệu lực của Hợp đồng bảo hiểm chưa c&oacute; khiếu nại y&ecirc;u cầu trả tiền bảo hiểm n&agrave;o xảy ra (trừ trường hợp khiếu nại bị từ chối trả tiền bảo hiểm).</div>\r\n<div>Nếu Bảo hiểm PVI y&ecirc;u cầu hủy bỏ bảo hiểm, Bảo hiểm PVI sẽ ho&agrave;n trả 100% ph&iacute; bảo hiểm của thời gian c&ograve;n lại.</div>', '<div>Trường hợp một trong hai b&ecirc;n đề nghị huỷ bỏ Hợp đồng bảo hiểm, b&ecirc;n y&ecirc;u cầu huỷ bỏ phải th&ocirc;ng b&aacute;o bằng văn bản cho b&ecirc;n kia biết trước 30 ng&agrave;y kể từ ng&agrave;y định huỷ bỏ.</div>\r\n<div>Nếu b&ecirc;n mua bảo hiểm y&ecirc;u cầu hủy bỏ Hợp đồng bảo hiểm, Bảo hiểm PVI sẽ ho&agrave;n trả 80% ph&iacute; bảo hiểm của thời gian c&ograve;n lại. Bảo hiểm PVI chỉ ho&agrave;n trả ph&iacute; bảo hiểm với điều kiện trong thời gian hiệu lực của Hợp đồng bảo hiểm chưa c&oacute; khiếu nại y&ecirc;u cầu trả tiền bảo hiểm n&agrave;o xảy ra (trừ trường hợp khiếu nại bị từ chối trả tiền bảo hiểm).</div>\r\n<div>Nếu Bảo hiểm PVI y&ecirc;u cầu hủy bỏ bảo hiểm, Bảo hiểm PVI sẽ ho&agrave;n trả 100% ph&iacute; bảo hiểm của thời gian c&ograve;n lại.</div>');
+INSERT INTO `products` VALUES (2, 'Sản phẩm số 2', 1000000.00, 'Mô tả ngắn', 'san-pham-so-2', '<table>\r\n<tbody>\r\n<tr>\r\n<td rowspan=\"3\" valign=\"top\" width=\"2%\">1.</td>\r\n<td width=\"70%\"><strong>Đối tượng bảo hiểm bao gồm:</strong></td>\r\n</tr>\r\n<tr>\r\n<td>- C&ocirc;ng d&acirc;n Việt Nam v&agrave; Người nước ngo&agrave;i đang sinh sống hợp ph&aacute;p tại Việt Nam, từ đủ 03 tuổi đến 65 tuổi (t&iacute;nh theo lần sinh nhật gần nhất).</td>\r\n</tr>\r\n<tr>\r\n<td>- Người dưới 18 tuổi chỉ được nhận bảo hiểm nếu tham gia c&ugrave;ng bố hoặc mẹ.</td>\r\n</tr>\r\n<tr>\r\n<td rowspan=\"4\" valign=\"top\" width=\"2%\">2.</td>\r\n<td width=\"70%\"><strong>Bảo hiểm PVI kh&ocirc;ng nhận bảo hiểm cho c&aacute;c đối tượng sau:</strong></td>\r\n</tr>\r\n<tr>\r\n<td>- Những người đang trong thời gian điều trị bệnh tật, thương tật.</td>\r\n</tr>\r\n<tr>\r\n<td>- Những người bị t&agrave;n tật hoặc thương tật vĩnh viễn từ 50% trở l&ecirc;n.</td>\r\n</tr>\r\n<tr>\r\n<td>- Những người bị bệnh t&acirc;m thần, ung thư, phong.</td>\r\n</tr>\r\n</tbody>\r\n</table>', 3, 'Capture.PNG', 2, 0, 0, 1568081666, 1568082680, 1, '<div>Trường hợp một trong hai b&ecirc;n đề nghị huỷ bỏ Hợp đồng bảo hiểm, b&ecirc;n y&ecirc;u cầu huỷ bỏ phải th&ocirc;ng b&aacute;o bằng văn bản cho b&ecirc;n kia biết trước 30 ng&agrave;y kể từ ng&agrave;y định huỷ bỏ.</div>\r\n<div>Nếu b&ecirc;n mua bảo hiểm y&ecirc;u cầu hủy bỏ Hợp đồng bảo hiểm, Bảo hiểm PVI sẽ ho&agrave;n trả 80% ph&iacute; bảo hiểm của thời gian c&ograve;n lại. Bảo hiểm PVI chỉ ho&agrave;n trả ph&iacute; bảo hiểm với điều kiện trong thời gian hiệu lực của Hợp đồng bảo hiểm chưa c&oacute; khiếu nại y&ecirc;u cầu trả tiền bảo hiểm n&agrave;o xảy ra (trừ trường hợp khiếu nại bị từ chối trả tiền bảo hiểm).</div>\r\n<div>Nếu Bảo hiểm PVI y&ecirc;u cầu hủy bỏ bảo hiểm, Bảo hiểm PVI sẽ ho&agrave;n trả 100% ph&iacute; bảo hiểm của thời gian c&ograve;n lại.</div>', '<div>Trường hợp một trong hai b&ecirc;n đề nghị huỷ bỏ Hợp đồng bảo hiểm, b&ecirc;n y&ecirc;u cầu huỷ bỏ phải th&ocirc;ng b&aacute;o bằng văn bản cho b&ecirc;n kia biết trước 30 ng&agrave;y kể từ ng&agrave;y định huỷ bỏ.</div>\r\n<div>Nếu b&ecirc;n mua bảo hiểm y&ecirc;u cầu hủy bỏ Hợp đồng bảo hiểm, Bảo hiểm PVI sẽ ho&agrave;n trả 80% ph&iacute; bảo hiểm của thời gian c&ograve;n lại. Bảo hiểm PVI chỉ ho&agrave;n trả ph&iacute; bảo hiểm với điều kiện trong thời gian hiệu lực của Hợp đồng bảo hiểm chưa c&oacute; khiếu nại y&ecirc;u cầu trả tiền bảo hiểm n&agrave;o xảy ra (trừ trường hợp khiếu nại bị từ chối trả tiền bảo hiểm).</div>\r\n<div>Nếu Bảo hiểm PVI y&ecirc;u cầu hủy bỏ bảo hiểm, Bảo hiểm PVI sẽ ho&agrave;n trả 100% ph&iacute; bảo hiểm của thời gian c&ograve;n lại.</div>', '<div>Trường hợp một trong hai b&ecirc;n đề nghị huỷ bỏ Hợp đồng bảo hiểm, b&ecirc;n y&ecirc;u cầu huỷ bỏ phải th&ocirc;ng b&aacute;o bằng văn bản cho b&ecirc;n kia biết trước 30 ng&agrave;y kể từ ng&agrave;y định huỷ bỏ.</div>\r\n<div>Nếu b&ecirc;n mua bảo hiểm y&ecirc;u cầu hủy bỏ Hợp đồng bảo hiểm, Bảo hiểm PVI sẽ ho&agrave;n trả 80% ph&iacute; bảo hiểm của thời gian c&ograve;n lại. Bảo hiểm PVI chỉ ho&agrave;n trả ph&iacute; bảo hiểm với điều kiện trong thời gian hiệu lực của Hợp đồng bảo hiểm chưa c&oacute; khiếu nại y&ecirc;u cầu trả tiền bảo hiểm n&agrave;o xảy ra (trừ trường hợp khiếu nại bị từ chối trả tiền bảo hiểm).</div>\r\n<div>Nếu Bảo hiểm PVI y&ecirc;u cầu hủy bỏ bảo hiểm, Bảo hiểm PVI sẽ ho&agrave;n trả 100% ph&iacute; bảo hiểm của thời gian c&ograve;n lại.</div>', '<div>Trường hợp một trong hai b&ecirc;n đề nghị huỷ bỏ Hợp đồng bảo hiểm, b&ecirc;n y&ecirc;u cầu huỷ bỏ phải th&ocirc;ng b&aacute;o bằng văn bản cho b&ecirc;n kia biết trước 30 ng&agrave;y kể từ ng&agrave;y định huỷ bỏ.</div>\r\n<div>Nếu b&ecirc;n mua bảo hiểm y&ecirc;u cầu hủy bỏ Hợp đồng bảo hiểm, Bảo hiểm PVI sẽ ho&agrave;n trả 80% ph&iacute; bảo hiểm của thời gian c&ograve;n lại. Bảo hiểm PVI chỉ ho&agrave;n trả ph&iacute; bảo hiểm với điều kiện trong thời gian hiệu lực của Hợp đồng bảo hiểm chưa c&oacute; khiếu nại y&ecirc;u cầu trả tiền bảo hiểm n&agrave;o xảy ra (trừ trường hợp khiếu nại bị từ chối trả tiền bảo hiểm).</div>\r\n<div>Nếu Bảo hiểm PVI y&ecirc;u cầu hủy bỏ bảo hiểm, Bảo hiểm PVI sẽ ho&agrave;n trả 100% ph&iacute; bảo hiểm của thời gian c&ograve;n lại.</div>');
+
+-- ----------------------------
+-- Table structure for user
+-- ----------------------------
+DROP TABLE IF EXISTS `user`;
+CREATE TABLE `user`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `auth_key` varchar(32) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `password_hash` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `password_reset_token` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL,
+  `email` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `status` smallint(6) NOT NULL DEFAULT 10,
+  `created_at` int(11) NOT NULL,
+  `updated_at` int(11) NOT NULL,
+  `verification_token` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL,
+  PRIMARY KEY (`id`) USING BTREE,
+  UNIQUE INDEX `username`(`username`) USING BTREE,
+  UNIQUE INDEX `email`(`email`) USING BTREE,
+  UNIQUE INDEX `password_reset_token`(`password_reset_token`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 22 CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of user
+-- ----------------------------
+INSERT INTO `user` VALUES (1, 'admin', 'VjCmZH8pvkNzZ64LHxH6QS_l2yL55vzW', '$2y$13$h0F7AHA7hIb0nBwEyooFjeyCwTz6ZAaIULjTZG4MJcPWpkqR2wih2', NULL, 'nvdiepse@gmail.com', 10, 1567563706, 1567563706, 'Efw9XlaSpN0hRZ-NQIeiYoP0yiW18H3b_1567563706');
+INSERT INTO `user` VALUES (6, 'admin2', 'IFkS3WD2hnuZcv7WUsvJoBdwl-deuHli', '$2y$13$TLpZwhuF5a1em/3QkoQ/GO0c0SkmpHp6yzhytypE7JIaik.Eml726', NULL, 'admin2@gmail.com', 10, 1567580150, 1567580150, 'wDmfMXLOasbDTWZqGzxr9b1uBSWr69iU_1567580150');
+INSERT INTO `user` VALUES (9, 'test2', 'cl1yScLT2w0ACW6s2EOzH0HsLA75KCqY', '$2y$13$TrC1h/I1l6D/QqD9F7ehx.2ZZM9k6AsdheqcCtust/VRM2jMGZjQW', NULL, 'testname2@gmail.com', 10, 1567580747, 1567580747, 'QShnbQGKHzXCm-YaOoDX0p7ywL-Alik2_1567580747');
+INSERT INTO `user` VALUES (10, 'diepnv', 'z0n6ahI0Be6AcwPHLz2S7XxlOPTJZkKC', '$2y$13$9/kNlMd8TmBLhxxDfnn1sOsz23n2LySMzfMKrjUj..DMm8MSxiVAK', NULL, 'diepnv@hellomedia.vn', 10, 1567737059, 1567737059, 'um06CRysIYIvHZVfXKgcov-XhWH9FW-0_1567737059');
+INSERT INTO `user` VALUES (18, 'techlead231121212', 'TxSLrOQ-bD1WW7nuogVWfWiQxaukXz0f', '$2y$13$tgckRkQb3LdLzOT9E2fSbOjOgy6Vs6Fo61LG6r.wBIhPPFjHCdfMy', NULL, 'techlead231121212@gmail.com', 9, 1568004780, 1568004780, 'tWgzO0s_zNr8qTBOJi69nW1-LqM1op2__1568004780');
+INSERT INTO `user` VALUES (19, 'adminTech', 'iMb73yQk-_MdmUQAbCnAWEf-IVr7IdPo', '$2y$13$UW.uANdAjzy6KkIeZgeHw.g5wOq5.6GqV2HDJUpkZLCYGjSAS1mIS', NULL, 'adminTech@gmail.com', 9, 1568004840, 1568004840, '9mf2Sx_Dqw8mJj5oDRsVaZeUfaIfMOYl_1568004840');
+INSERT INTO `user` VALUES (20, 'adminTech1', 'DaJQyU4PiX39Aec7m1-tISgsYToIAO7E', '$2y$13$SgXrURA7w/3i6kQDhtAyguF.Pe.Q6H5UtArjLbK1Sv3mkKwuV1FDu', NULL, 'adminTech1@gmail.com', 9, 1568004883, 1568004883, 'K9SkNOnZIx0tANdhXYApP_qYozIFqxvu_1568004883');
+INSERT INTO `user` VALUES (21, 'diepkk', 't5id0TTeLR8lnkuuDIBGaTH8hfPma9RJ', '$2y$13$KXVdWlZOgOv5UYBDTqMile8AxwINP7KTC/z4wjMyi0HrEy0gQp73y', NULL, 'diepkk@gmail.com', 9, 1568011452, 1568011452, '3upk67mSd_6qERRnMiWjCHRSXcb6u6Ez_1568011452');
+
+-- ----------------------------
+-- Table structure for user_fe
+-- ----------------------------
+DROP TABLE IF EXISTS `user_fe`;
+CREATE TABLE `user_fe`  (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `auth_key` varchar(32) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `password_hash` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `password_reset_token` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL,
+  `email` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `status` smallint(6) NOT NULL DEFAULT 10,
+  `created_at` int(11) NOT NULL,
+  `updated_at` int(11) NOT NULL,
+  `verification_token` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL DEFAULT NULL,
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 16 CHARACTER SET = utf8 COLLATE = utf8_unicode_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of user_fe
+-- ----------------------------
+INSERT INTO `user_fe` VALUES (3, 'ngogiadiep', 's0FUARxfImSXBplW4WI-tYefY2tOekN1', '$2y$13$Kbze1vb/ILDYN7rG9Pjk1.ymti4vBszifgR8qk8.29thw0HDhDBge', 'zhdRdUYL_UH8Op_ZKLDv2APTCat26Aoc_1567584644', 'ngogiadiepit@gmail.com', 10, 1567584621, 1567584644, 'MpJ22RQf87pnGMJBDV82F3e4Qcw3q931_1567584621');
+INSERT INTO `user_fe` VALUES (4, 'nvdiepse', 'hr8TRutmYuMrnyX8wdqnPTk7hGlQ1mQ3', '$2y$13$xGdOPcp93/49aPWZwiqHOuR.JFg1RQpYtWquSZPjc6PDkl3q.R4Jy', NULL, 'diepnv@hellomedia.vn', 9, 1567589946, 1567589946, 'yPSDI6X3P7Hd0o7EV4TG1vgjf2i_BJIg_1567589946');
+INSERT INTO `user_fe` VALUES (5, 'nvdiepse', '3Wh6oE8eIgvRVpZk8_3PRkI4tG8mktN7', '$2y$13$U8fkuftli7gE2ZgGo16pfuJFHEbhl7LpivxRdBQWao1urQcTXGvVu', NULL, 'diepnv@hellomedia.vn', 9, 1567589994, 1567589994, 'z1ZU179rAMPZ-_kf7YHxouw4-uegtOD8_1567589994');
+INSERT INTO `user_fe` VALUES (6, 'nvdiepse', 'jYasJXPYO5NtbkKWEYM-dbK4_XpJ_QQq', '$2y$13$/qC4OPRIkJejdG1uc8dOyu8Q0aPXNieg5gm8GRG64E9UsemiUkvTC', NULL, 'diepnv@hellomedia.vn', 9, 1567590048, 1567590048, 'Td12cFtGc_x9zTXMd6kxOizsG4K7OqX4_1567590048');
+INSERT INTO `user_fe` VALUES (7, 'nvdiepse', 'oWjk5pPHcOC0ZOUOeTu1uQJHA3a_r_gb', '$2y$13$nQV/IfFbE7PlyreEHlrig.ZOgmZ3g/yt5Y/d0gGBFL3y6CnmFnSZa', NULL, 'diepnv@hellomedia.vn', 9, 1567590135, 1567590135, '0twTh2kTXvbdCohGJ639KFcgruxiD9it_1567590135');
+INSERT INTO `user_fe` VALUES (8, 'nvdiepse', 'XlT_xWZOwWAm4Cn-AT2nJxhVjBS00TMj', '$2y$13$EyR9isjn/er1arOtPv2y4uR8tWgQ9.sSqeryLUmF5q5XYiEOo4WJi', NULL, 'diepnv@hellomedia.vn', 9, 1567590252, 1567590252, '0E-05QC7H5yW7piLepDMzVb6q5w3febF_1567590252');
+INSERT INTO `user_fe` VALUES (9, 'nvdiepse', 'HgLE-UF4CoU-qF3pealGfkzeJkbkg--u', '$2y$13$dLx2gp6npkRDQrSlmALg9.jw8f2WgYbKqtJk2q8AY5Te22Ne2S0Qa', NULL, 'diepnv@hellomedia.vn', 9, 1567590271, 1567590271, 'az25Do5xcYqjoTzICREVCU1_EjkAc_QF_1567590271');
+INSERT INTO `user_fe` VALUES (10, 'nvdiepse', '1H20Iry9INVcpmUqrRja1FFJ3X2kaZ1y', '$2y$13$ZHJv0nGyeTROeo4Z0RvdeO9oLRqT9UrH0D8poh..cONM2L83BDrW6', NULL, 'diepnv@hellomedia.vn', 9, 1567590308, 1567590308, '-05p4aL71AAuT_DVAKOUbV2bB8qhcC27_1567590308');
+INSERT INTO `user_fe` VALUES (11, 'nvdiepse', 'v-YX1oKADnbe1Jjpofp00N4H5R5HT39h', '$2y$13$WJIdVTlt7R/Q37JADXBeTO91E7KQY3hgstmBBL5b.gk5C4FrMS4Jy', NULL, 'diepnv@hellomedia.vn', 9, 1567590530, 1567590530, 'isKTl6wd1Y3nLPmAhFZLEAHROxsGXvOV_1567590530');
+INSERT INTO `user_fe` VALUES (12, 'nvdiepse', 'N3R-w2KtYJ3MnCSw6j-tST5vW9a1LeJH', '$2y$13$IF1LYrsyKwFEyG7rkYne8OqnavU4csAXS3Ef5UsMdwCbqhqCbFq4m', NULL, 'diepnv@hellomedia.vn', 9, 1567590682, 1567590682, 'j2NpXY3qiX5GPO5LO6nkbjHEyvddrJZw_1567590682');
+INSERT INTO `user_fe` VALUES (13, 'nvdiepse', '6Y5hPHgK_U6u5TBQr4fjMjVHVsuCiZzc', '$2y$13$TncPeqz3rgWjq.fah0d89.zVujQa0GUq2SMr9QZGERgCZU8/Gf1B.', NULL, 'diepnv@hellomedia.vn', 9, 1567590712, 1567590712, 'F42QZTYfmOUT03XW7biHva8xBEAQkkwX_1567590712');
+INSERT INTO `user_fe` VALUES (14, 'nvdiepse', 'mUI4pI_NK__xRx9bETMiNJY7Gu4ueOr7', '$2y$13$G1bEt0uKbf1NkaKjhdd5Ku5HgvJMNFOgfzg3nqycMmfhk3mN14BsW', NULL, 'diepnv@hellomedia.vn', 9, 1567590809, 1567590809, 'ngVFzFwTosNBx4xFC5i2Vmn2-KBPMN6w_1567590809');
+INSERT INTO `user_fe` VALUES (15, 'nvdiepse', 'PZ-1VBXrtlVoGVdaJYYv5RJKKU-DJWQn', '$2y$13$qm2xgRyV7f8JqneszOJOEeBgVPwHJlnfLeSS2PKlNNUQREve38aFm', NULL, 'diepnv@hellomedia.vn', 9, 1567590835, 1567590835, '4MNUpAvruSNMkD_gewzWemawyuttnVgv_1567590835');
+
+SET FOREIGN_KEY_CHECKS = 1;

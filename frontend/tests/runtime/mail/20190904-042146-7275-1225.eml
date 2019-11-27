@@ -1,0 +1,54 @@
+Message-ID: <ce06e66177aa9861562c7b3716918ac2@baohiem.vn>
+Date: Wed, 04 Sep 2019 04:21:46 +0200
+Subject: Account registration at My Application
+From: My Application robot <support@example.com>
+To: nvdiepse@gmail.com
+MIME-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="_=_swift_1567563706_45fb48ab1e98c710f38479cd48045162_=_"
+
+
+--_=_swift_1567563706_45fb48ab1e98c710f38479cd48045162_=_
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+
+Hello admin,
+
+Follow the link below to verify your email:
+
+http:=
+//baohiem.vn:8080/site/verify-email?token=3DEfw9XlaSpN0hRZ-NQIeiYoP0yiW18H3=
+b_1567563706
+
+--_=_swift_1567563706_45fb48ab1e98c710f38479cd48045162_=_
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org=
+/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns=3D"http://www.w3.org/1999/=
+xhtml">
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/ht=
+ml; charset=3DUTF-8" />
+    <title></title>
+    </head>
+<body>
+    =
+    <div class=3D"verify-email">
+    <p>Hello admin,</p>
+
+    <p>Foll=
+ow the link below to verify your email:</p>
+
+    <p><a href=3D"http://b=
+aohiem.vn:8080/site/verify-email?token=3DEfw9XlaSpN0hRZ-NQIeiYoP0yiW18H3b_1=
+567563706">http://baohiem.vn:8080/site/verify-email?token=3DEfw9XlaSpN0hRZ-=
+NQIeiYoP0yiW18H3b_1567563706</a></p>
+</div>
+    </body>
+</html>
+
+
+--_=_swift_1567563706_45fb48ab1e98c710f38479cd48045162_=_--

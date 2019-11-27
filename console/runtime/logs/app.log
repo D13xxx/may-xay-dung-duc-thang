@@ -1,0 +1,87 @@
+2019-09-04 10:17:30 [-][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: You should configure "authManager" component to use database before executing this migration. in F:\Xampp\htdocs\web-dev\bao-hiem\bao-hiem-v1\vendor\yiisoft\yii2\rbac\migrations\m140506_102106_rbac_init.php:27
+Stack trace:
+#0 F:\Xampp\htdocs\web-dev\bao-hiem\bao-hiem-v1\vendor\yiisoft\yii2\rbac\migrations\m140506_102106_rbac_init.php(51): m140506_102106_rbac_init->getAuthManager()
+#1 F:\Xampp\htdocs\web-dev\bao-hiem\bao-hiem-v1\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(724): m140506_102106_rbac_init->up()
+#2 F:\Xampp\htdocs\web-dev\bao-hiem\bao-hiem-v1\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(200): yii\console\controllers\BaseMigrateController->migrateUp('m140506_102106_...')
+#3 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#4 F:\Xampp\htdocs\web-dev\bao-hiem\bao-hiem-v1\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 F:\Xampp\htdocs\web-dev\bao-hiem\bao-hiem-v1\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 F:\Xampp\htdocs\web-dev\bao-hiem\bao-hiem-v1\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('up', Array)
+#7 F:\Xampp\htdocs\web-dev\bao-hiem\bao-hiem-v1\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('up', Array)
+#8 F:\Xampp\htdocs\web-dev\bao-hiem\bao-hiem-v1\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate/up', Array)
+#9 F:\Xampp\htdocs\web-dev\bao-hiem\bao-hiem-v1\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate/up', Array)
+#10 F:\Xampp\htdocs\web-dev\bao-hiem\bao-hiem-v1\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 F:\Xampp\htdocs\web-dev\bao-hiem\bao-hiem-v1\yii(23): yii\base\Application->run()
+#12 {main}
+2019-09-04 10:17:25 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'PHP_COMMAND' => 'php.exe'
+    'ProgramFiles' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'SESSIONNAME' => 'Console'
+    'COMPUTERNAME' => 'NGOGIADIEPSE-PC'
+    'TMP' => 'C:\\Users\\NGOGIA~1\\AppData\\Local\\Temp'
+    'OneDriveConsumer' => 'C:\\Users\\NgoGiaDiepSe\\OneDrive'
+    'YII_PATH' => 'F:\\Xampp\\htdocs\\web-dev\\bao-hiem\\bao-hiem-v1\\'
+    '__INTELLIJ_COMMAND_HISTFILE__' => 'C:\\Users\\NgoGiaDiepSe\\.PhpStorm2019.1\\config\\terminal\\history\\history-'
+    'SystemDrive' => 'C:'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'LOGONSERVER' => '\\\\NGOGIADIEPSE-PC'
+    'USERDOMAIN' => 'NgoGiaDiepSe-PC'
+    'ProgramW6432' => 'C:\\Program Files'
+    'HOMEPATH' => '\\Users\\NgoGiaDiepSe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'USERNAME' => 'NgoGiaDiepSe'
+    'SynaProgDir' => 'Synaptics\\SynTP'
+    'USERDOMAIN_ROAMINGPROFILE' => 'NgoGiaDiepSe-PC'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'LOCALAPPDATA' => 'C:\\Users\\NgoGiaDiepSe\\AppData\\Local'
+    'TERMINAL_EMULATOR' => 'JetBrains-JediTerm'
+    'TEMP' => 'C:\\Users\\NGOGIA~1\\AppData\\Local\\Temp'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'APPDATA' => 'C:\\Users\\NgoGiaDiepSe\\AppData\\Roaming'
+    'HOMEDRIVE' => 'C:'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'PROCESSOR_LEVEL' => '6'
+    'ProgramData' => 'C:\\ProgramData'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'PROCESSOR_REVISION' => '3d04'
+    'OneDrive' => 'C:\\Users\\NgoGiaDiepSe\\OneDrive'
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'Path' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\;C:\\Program Files\\WIDCOMM\\Bluetooth Software\\syswow64;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\PuTTY\\;C:\\Program Files\\TortoiseSVN\\bin;F:\\Xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\NgoGiaDiepSe\\AppData\\Roaming\\npm;C:\\Users\\NgoGiaDiepSe\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\NgoGiaDiepSe\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\NgoGiaDiepSe\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'USERPROFILE' => 'C:\\Users\\NgoGiaDiepSe'
+    'windir' => 'C:\\WINDOWS'
+    'windows_tracing_flags' => '3'
+    'OS' => 'Windows_NT'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 61 Stepping 4, GenuineIntel'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'windows_tracing_logfile' => 'C:\\BVTBin\\Tests\\installpackage\\csilogfile.log'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'PHP_SELF' => 'F:\\Xampp\\htdocs\\web-dev\\bao-hiem\\bao-hiem-v1\\yii'
+    'SCRIPT_NAME' => 'F:\\Xampp\\htdocs\\web-dev\\bao-hiem\\bao-hiem-v1\\yii'
+    'SCRIPT_FILENAME' => 'F:\\Xampp\\htdocs\\web-dev\\bao-hiem\\bao-hiem-v1\\yii'
+    'PATH_TRANSLATED' => 'F:\\Xampp\\htdocs\\web-dev\\bao-hiem\\bao-hiem-v1\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1567585045.6215
+    'REQUEST_TIME' => 1567585045
+    'argv' => [
+        0 => 'F:\\Xampp\\htdocs\\web-dev\\bao-hiem\\bao-hiem-v1\\yii'
+        1 => 'migrate/up'
+        2 => '--migrationPath=@yii/rbac/migrations'
+    ]
+    'argc' => 3
+]
